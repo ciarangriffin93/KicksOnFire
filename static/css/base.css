@@ -56,6 +56,12 @@ body {
     border: 1px solid black !important;
 }
 
+/*------------------- index */
+
+#homeContainer {
+    margin-top: 9rem;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
