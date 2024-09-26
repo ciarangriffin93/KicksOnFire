@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -20,13 +20,13 @@
             <div class="container d-flex">
                 <hr class="ms-5 w-50">
             </div>
-            
+
             <div class="container my-3">
                 <h4>
-                    <a href="#" class="btn-outline-dark ms-5 btn btn-lg rounded-1 text-uppercase btnD">Shop Now</a>
+                    <a href="{% url 'products' %}"
+                        class="btn-outline-dark ms-5 btn btn-lg rounded-1 text-uppercase btnD">Shop Now</a>
                 </h4>
             </div>
         </div>
     </div>
-</div>
-{% endblock %}
+    {% endblock %}
