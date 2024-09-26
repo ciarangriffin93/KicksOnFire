@@ -56,10 +56,18 @@ body {
     border: 1px solid black !important;
 }
 
-/*------------------- index */
+.bg-black {
+    background: #000 !important;
+}
 
-#homeContainer {
-    margin-top: 9rem;
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
