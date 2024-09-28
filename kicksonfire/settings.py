@@ -32,7 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-lfh7yh8m5ii.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-kicksonfire-7qutxix46r0.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriff-kicksonfire-lfh7yh8m5ii.ws.codeinstitute-ide.net'
 ]
 
 
