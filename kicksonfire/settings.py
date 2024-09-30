@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-alj52mx1qjf.ws.codeinstitute-ide.net' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-m6cdru79qi6.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-ciarangriff-kicksonfire-lfh7yh8m5ii.ws.codeinstitute-ide.net'
@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
+    'bag',
 ]
 
 MIDDLEWARE = [
