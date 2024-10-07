@@ -27,6 +27,8 @@ body {
     width: fit-content;
 }
 
+.contact-us-button,
+.register-now-button,
 .shop-now-button {
     background: black;
     color: white;
