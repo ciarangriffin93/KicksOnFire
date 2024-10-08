@@ -1,0 +1,13 @@
+.fieldset-label {
+    font-size: 20px;
+    color: var(--forest);
+    font-weight: bold;
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #194f49;
+    border: 1px solid #194f4980;
+}
