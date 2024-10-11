@@ -1,35 +1,23 @@
-{% extends "base.html" %}
+{% extends "account/base.html" %}
 
 {% load i18n %}
 
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
+{% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
-{% block head_title %}{% trans "Log Out" %}{% endblock %}
+{% block inner_content %}
+<hr>
+<h2 class="logo-font mb-4">{% trans "Sign Out" %}</h2>
+<hr>
+<p>{% trans 'Are you sure you want to sign out?' %}</p>
 
-{% block content %}
-<div class="overlay"></div>
-<div class="container h-100 text-center my-5">
-    <h1 class="heading-text">{% trans "Log Out" %}</h1>
+<form method="post" action="{% url 'account_logout' %}">
+  {% csrf_token %}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+  {% endif %}
+  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
+  <button type="submit">{% trans 'Sign Out' %}</button>
+</form>
 
-    <p class="p-txt mt-2 my-4">Log out securely from your account?</p>
-
-    <form method="post" action="{% url 'account_logout' %}">
-        {% csrf_token %}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
-        {% endif %}
-        <button type="submit" class="btn auth-btn my-4">Log Out</button>
-    </form>
-
-    <div class="mb-3">
-        <a href="{% url 'home' %}" class="btn auth-btn my-3 mb-5">Return Home</a>
-    </div>
-</div>
 
 {% endblock %}
