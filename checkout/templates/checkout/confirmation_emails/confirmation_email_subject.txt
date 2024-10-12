@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+KicksOnFire Confirmation for Order Number {{ order.order_number }}
