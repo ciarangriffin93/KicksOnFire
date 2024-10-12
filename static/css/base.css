@@ -24,7 +24,10 @@ body {
 }
 
 .main-logo-link {
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .contact-us-button,
