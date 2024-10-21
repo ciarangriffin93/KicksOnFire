@@ -18,12 +18,11 @@
                 <li class="list-group-item">
                     <div class="row align-items-center">
                         <div class="col-lg-2 col-sm-4">
-                            <a href="">
+                            <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
                                 <img class="w-100 wishlist-prod" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                 {% else %}
-                                <img class="w-100 wishlist-prod" src="{{ MEDIA_URL }}product_placeholder.png"
-                                    alt="{{ item.product.name }}">
+                                <img class="w-100 wishlist-prod" src="{% static 'product_placeholder.png' %}" alt="{{ item.product.name }}">
                                 {% endif %}
                             </a>
                         </div>
@@ -31,7 +30,7 @@
                             <p class="my-0">{{ item.product.name }}</p>
                         </div>
                         <div class="col-lg-4 col-sm-4">
-                            <a href="" class="wishlist-delete">
+                            <a href="{% url 'remove_from_wishlist' item.product.id %}" class="wishlist-delete">
                                 <i class="fas fa-trash wishlist-icon"></i> Remove
                             </a>
                         </div>
