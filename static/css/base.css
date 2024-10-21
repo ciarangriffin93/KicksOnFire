@@ -232,6 +232,37 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
+/* Wishlist Styles */
+.wishlist-border {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #f8f9fa; 
+}
+
+.wishlist-prod {
+    max-height: 150px;
+    object-fit: cover; 
+}
+
+.wishlist-icon {
+    color: #dc3545;
+}
+
+.wishlist-delete {
+    text-decoration: none;
+    color: #dc3545;
+}
+
+.wishlist-delete:hover {
+    text-decoration: underline; 
+}
+
+/* Empty Wishlist Message */
+.p-txt {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
