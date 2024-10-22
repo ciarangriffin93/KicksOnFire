@@ -1,53 +1,98 @@
-<footer class="text-white mt-3">
-    <div class="container-fluid pt-6" style="background-color: rgb(75, 75, 75);">
-        <div class="row">
-            <!-- Social Links -->
-            <div class="col-md-4 mb-6">
-                <h2 class="h5">Contact/Social Media</h2>
-                <a href="#" target="_blank" rel="noopener" class="text-white d-block mb-2">
-                    <i class="fab fa-facebook"></i> Facebook
-                </a>
-                <a href="#" class="text-white d-block mb-2"><i class="fa-solid fa-address-card"></i> Contact Us</a>
+ <!-- Footer -->
+ <div class="footer mt-5">
+    <footer class="text-center text-lg-start text-white footer-section">
+        <!-- Section - Social media -->
+        <div class="d-flex justify-content-between p-4 footer-section-social-media">
+            <div class="me-5">
+                <span>Connect with us on social networks:</span>
             </div>
-            <!-- Additional Links -->
-            <div class="col-md-4 mb-4">
-                <h2 class="h5">More Information</h2>
-                <a href="#" target="_blank" class="text-white d-block mb-2"><i class="fa-solid fa-user-lock"></i> Our
-                    Privacy Policy</a>
-            </div>
-            <!-- Newsletter Signup -->
-            <div class="col-md-4 mb-4">
-                <h2 class="h5">Hear from us!</h2>
-                <div id="mc_embed_shell">
-                    <div id="mc_embed_signup">
-                        <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_blank">
-                            <div id="mc_embed_signup_scroll">
-                                <div class="mc-field-group">
-                                    <label for="mce-EMAIL">Subscribe To Our Newsletter</Address>:</label>
-                                    <input type="email" name="EMAIL" class="required email form-control" id="mce-EMAIL"
-                                        placeholder="Email Address" required="">
+            <div class="d-flex flex-row">
+                <div class="mr-2">
+                    <a href="" target="_blank" 
+                    rel="nofollow" class="text-white" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="mr-2">
+                    <a href="" target="_blank" 
+                    rel="nofollow" class="text-white" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div class="mr-2">
+                  <a href="" target="_blank" 
+                  rel="nofollow" class="text-white" aria-label="instagram">
+                  <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+                <div class="mr-2">
+                    <a href="" target="_blank" 
+                    rel="nofollow" class="text-white" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>            
+        </div>
+        <!-- Section - About us   -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold">About Us</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto shop-content">
+                        <p>
+                            Welcome to KicksOnFire – the premier online hub for exclusive, high-end sneakers and footwear designed for those who demand the best
+                        </p>
+                    </div>
+                    <!-- Contact Us column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <a class="text-uppercase text-white link-offset-2 link-underline link-underline-opacity-0 fw-bold" href="">
+                            <h6>Contact Us</h6>
+                        </a>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto shop-content">
+                        <p><i class="fas fa-home mr-3"></i> Dublin, Ireland</p>
+                        <p><i class="fas fa-envelope mr-3"></i> 
+                            <a href="" class="text-white">kicksonfire@gmail.com</a>
+                        </p>
+                        <p><i class="fas fa-phone mr-3"></i> +353 8709 066 91</p>
+                    </div>
+                    <!-- Newsletter / Subscribe / Unsubscribe section -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <form method="POST" action="" id="newsletters-form">
+                            {% csrf_token %}
+                            <div class="modal-header justify-content-center">
+                                <div class="icon-box">
+                                    <i class="fa-regular far fa-envelope fa-4x"></i>
                                 </div>
-                                <div id="mce-responses" class="clear foot">
-                                    <div id="mce-error-response" style="display: none;"></div>
-                                    <div id="mce-success-response" style="display: none;"></div>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p>Join our weekly newsletter. Stay in the loop
+                                    with the latest trends and exclusive offers. </p>                                
+                                <div class="form-group ">
+                                    <input type="email" name="email" class="form-control"
+                                        placeholder="Enter your email" required="" autocomplete="email">
+                                        <div class="d-flex gap-2 flex-column">                                            
+                                            <button class="btn btn-primary mt-2" type="submit" id="subscribe">Subscribe</button>
+                                            <a href="" class="btn btn-warning mt-2" id="unsubscribe">Unsubscribe</a>
+                                        </div>                                 
                                 </div>
-                                <div style="display: none;">
-                                    <label for="hiddenField" aria-hidden="true">Hidden Field:</label>
-                                    <input type="text" name="" tabindex="-1" value="" id="hiddenField"
-                                        aria-hidden="true">
-                                </div>
-                                <button type="submit" class="btn btn-light mb-4"
-                                    aria-label="Subscribe to our newsletter">Subscribe</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid text-center py-2 bg-dark all-rights-box">
-
-                <p class="mb-0">&copy; {% now "Y" %} KicksOnFire. All Rights Reserved</p>
-            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-3 footer-bar">
+            © 2024 Copyright:
+            <a class="text-white link-offset-2 link-underline link-underline-opacity-0" target="_blank" 
+            rel="nofollow" href="https://www.linkedin.com/in/">For Educational Purpose Only.</a>
+            <a href="" 
+            class="link-offset-2 link-underline link-underline-opacity-0 fw-bold"
+            target="_blank" rel="noopener">Privacy Policy
+            </a>
         </div>
-    </div>
-</footer>
+    </footer>
+  </div>
