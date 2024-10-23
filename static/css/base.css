@@ -286,6 +286,8 @@ input[name='q']::placeholder {
     background-color: rgba(254, 78, 78, 0.586);
 }
 
+
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {

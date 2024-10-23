@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -56,16 +56,28 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
-
+@login_required  # Require login to access this view
 def product_detail(request, product_id):
-    """ A view to show individual product details """
-
-    product = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, id=product_id)
+    reviews = product.reviews.all()
+    
+    if request.method == 'POST':
+        review_form = ReviewForm(request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.product = product  # Assign the product
+            review.user = request.user  # Assign the logged-in user
+            review.save()
+            return redirect('product_detail', product_id=product.id)
+    else:
+        review_form = ReviewForm()  # Initialize the form
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'review_form': review_form,
     }
-
+    
     return render(request, 'products/product_detail.html', context)
 
 @login_required
