@@ -56,28 +56,26 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
-@login_required  # Require login to access this view
 def product_detail(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     reviews = product.reviews.all()
-    
-    if request.method == 'POST':
+
+    if request.method == 'POST' and request.user.is_authenticated:
         review_form = ReviewForm(request.POST)
         if review_form.is_valid():
             review = review_form.save(commit=False)
-            review.product = product  # Assign the product
-            review.user = request.user  # Assign the logged-in user
-            review.save()
+            review.product = product
+            review.user = request.user 
+            review.save()  # Save the review to the database
             return redirect('product_detail', product_id=product.id)
     else:
-        review_form = ReviewForm()  # Initialize the form
+        review_form = ReviewForm()
 
     context = {
         'product': product,
         'reviews': reviews,
         'review_form': review_form,
     }
-    
     return render(request, 'products/product_detail.html', context)
 
 @login_required
