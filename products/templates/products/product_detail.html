@@ -128,9 +128,28 @@
             </div>
         </div>
     </div>
-{% endblock %}
 
-{% block postloadjs %}
-{{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
+    <!-- Reviews Section -->
+    <div class="reviews-section mt-5">
+        <h3>Reviews</h3>
+        <div class="reviews">
+            {% for review in reviews %}
+                <div class="review">
+                    <strong>{{ review.user.username }}</strong> - {{ review.rating }} stars
+                    <p>{{ review.review_text }}</p>
+                    <small>{{ review.created_at|date:"Y-m-d H:i" }}</small>
+                </div>
+            {% empty %}
+                <p>No reviews yet.</p>
+            {% endfor %}
+        </div>
+
+        <h4>Leave a Review</h4>
+        <form method="POST">
+            {% csrf_token %}
+            {{ review_form.as_p }}
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+    </div>
+
 {% endblock %}
