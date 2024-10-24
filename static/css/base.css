@@ -286,7 +286,82 @@ input[name='q']::placeholder {
     background-color: rgba(254, 78, 78, 0.586);
 }
 
+/* Reviews section */
+.reviews-container {
+    margin-top: 30px;
+}
 
+.reviews-container h3 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #009688;
+}
+
+.review p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Review form styling */
+.review-form {
+    margin-top: 30px;
+}
+
+.review-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form form input,
+.review-form form textarea,
+.review-form form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Submit button */
+.review-form form button {
+    background-color: #009688;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form form button:hover {
+    background-color: #00796b;
+}
+
+/* Login / signup prompts */
+.login-prompt {
+    background-color: #fff4e6;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ff9800;
+    margin-top: 20px;
+}
+
+.login-prompt a {
+    color: #ff9800;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
