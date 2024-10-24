@@ -363,6 +363,29 @@ input[name='q']::placeholder {
     text-decoration: underline;
 }
 
+/* Container for product details */
+.product-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product title styling */
+.product-container h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Product description */
+.product-container p {
+    color: #666;
+    font-size: 16px;
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
