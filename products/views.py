@@ -144,3 +144,45 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+@login_required
+def edit_review(request, review_id):
+    """ Edit a review """
+    review = get_object_or_404(Review, pk=review_id)
+
+    # Check if the user is the owner of the review
+    if review.user != request.user:
+        messages.error(request, "You are not authorized to edit this review.")
+        return redirect('product_detail', product_id=review.product.id)
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Your review has been updated.")
+            return redirect('product_detail', product_id=review.product.id)
+        else:
+            messages.error(request, "Failed to update the review. Please ensure the form is valid.")
+    else:
+        form = ReviewForm(instance=review)
+
+    context = {
+        'form': form,
+        'review': review,
+    }
+
+    return render(request, 'products/edit_review.html', context)
+
+@login_required
+def delete_review(request, review_id):
+    """ Delete a review """
+    review = get_object_or_404(Review, pk=review_id)
+
+    # Check if the user is the owner of the review
+    if review.user != request.user:
+        messages.error(request, "You are not authorized to delete this review.")
+        return redirect('product_detail', product_id=review.product.id)
+
+    review.delete()
+    messages.success(request, "Your review has been deleted.")
+    return redirect('product_detail', product_id=review.product.id)
