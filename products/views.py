@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Review
-from .forms import ProductForm, ReviewForm
+from .forms import ProductForm, ReviewForm, forms
 
 # Create your views here.
 
@@ -186,3 +186,20 @@ def delete_review(request, review_id):
     review.delete()
     messages.success(request, "Your review has been deleted.")
     return redirect('product_detail', product_id=review.product.id)
+
+class ReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = ['rating', 'review_text']  # Include the fields you want in the form
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['rating'].widget.attrs.update({'class': 'form-control'})
+        self.fields['review_text'].widget.attrs.update({'class': 'form-control', 'rows': 3})
+
+    def clean_rating(self):
+        """Ensure rating is between 1 and 5."""
+        rating = self.cleaned_data.get('rating')
+        if rating < 1 or rating > 5:
+            raise forms.ValidationError('Rating must be between 1 and 5.')
+        return rating

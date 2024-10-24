@@ -151,20 +151,31 @@
 </div>
 
     {% if user.is_authenticated %}
-        <div class="review-form">
-            <h3>Leave a Review:</h3>
-            <form method="POST">
-                {% csrf_token %}
-                {{ review_form.as_p }}
-                <button type="submit">Submit Review</button>
-            </form>
-        </div>
-    {% else %}
-        <div class="login-prompt">
-            <p>You must be logged in to leave a review. <a href="{% url 'account_login' %}">Log in</a> or <a href="{% url 'account_signup' %}">sign up</a>.</p>
-        </div>
+    <div class="review-form">
+        <h3>Leave a Review:</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{ review_form.as_p }}
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+    
+        {% if review_form.errors %}
+            <div class="alert alert-danger">
+                <ul>
+                    {% for field, errors in review_form.errors.items %}
+                        <li>{{ errors|striptags }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const ratingInput = document.querySelector("#id_rating");
+            ratingInput.setAttribute("min", 1);
+            ratingInput.setAttribute("max", 5);
+        });
+    </script>
     {% endif %}
-</div>
-
-
 {% endblock %}
