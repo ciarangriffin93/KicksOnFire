@@ -10,13 +10,13 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-10 mt-5"></div>
-    <div class="row h-100">
-        <div class="col-4 col-md-8 my-auto">
-            <h1 class="display-8 logo-font text-black text-center">
+<div class="container h-100 mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-6 text-center">
+            <h1 class="display-2 logo-font text-white">
                 THE HOME OF SHOES!
             </h1>
-            <div class="my-10 text-center">
+            <div class="my-4">
                 <h4>
                     <a href="{% url 'products' %}" class="shop-now-button btn btn-outline-light btn-lg text-uppercase py-3">Shop Now!</a>
                 </h4>
@@ -25,36 +25,31 @@
     </div>
 </div>
 
-<div class="card-group marg-top">
+<div class="card-group mt-4">
     <div class="card home-card-bckg">
-        <img width="200" height="400" src="https://images.pexels.com/photos/13457480/pexels-photo-13457480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top card-pic" alt="Game consoles">
-      <div class="card-body text-center">
-        <h5 class="card-title">Free Delivery!</h5>
-        <p class="card-text">On orders over €{{ free_delivery_threshold }}!</p>
-        <a href="{% url 'products' %}" class="btn btn-outline-light btn-sm">
-            <span class="shop-now-button btn btn-outline-light btn-lg text-uppercase">Shop Now!</span>
-        </a>
-      </div>
+        <img width="200" height="400" src="https://images.pexels.com/photos/13457480/pexels-photo-13457480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top card-pic" alt="Consoles displayed on shelves for free delivery offer">
+        <div class="card-body text-center">
+            <h5 class="card-title">Free Delivery!</h5>
+            <p class="card-text">On orders over €{{ free_delivery_threshold }}!</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-light btn-lg text-uppercase">Shop Now!</a>
+        </div>
     </div>
     <div class="card home-card-bckg">
-        <img width="200" height="400" src="https://images.pexels.com/photos/6050921/pexels-photo-6050921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top card-pic" alt="Girl and laptop">
-      <div class="card-body text-center">
-        <h5 class="card-title">Join KicksOnFire Club!</h5>
-        <p class="card-text">Create your own wishlist and make the payments easier!</p>
-        <a href="{% url 'account_signup' %}" class="btn btn-outline-light btn-sm">
-            <span class="register-now-button btn btn-outline-light btn-lg text-uppercase">Register Now!</span>
-        </a>
-      </div>
+        <img width="200" height="400" src="https://images.pexels.com/photos/6050921/pexels-photo-6050921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top card-pic" alt="User browsing shoes on laptop for wishlist feature">
+        <div class="card-body text-center">
+            <h5 class="card-title">Join KicksOnFire Club!</h5>
+            <p class="card-text">Create your own wishlist and make payments easier!</p>
+            <a href="{% url 'account_signup' %}" class="btn btn-outline-light btn-lg text-uppercase">Register Now!</a>
+        </div>
     </div>
     <div class="card home-card-bckg">
-        <img width="200" height="400" src="https://images.pexels.com/photos/28492804/pexels-photo-28492804/free-photo-of-stack-of-branded-sneaker-boxes-on-concrete-floor.jpeg" class="card-img-top card-pic" alt="Guy with laptop">
-      <div class="card-body text-center">
-        <h5 class="card-title">Here To Help!</h5>
-        <p class="card-text">We hope you find the help you need, if not - get in touch!</p>
-        <a href="" class="btn btn-outline-light btn-sm">
-            <span class="contact-us-button btn btn-outline-light btn-lg text-uppercase">Contact Us!</span>
-        </a>
-      </div>
+        <img width="200" height="400" src="https://images.pexels.com/photos/28492804/pexels-photo-28492804/free-photo-of-stack-of-branded-sneaker-boxes-on-concrete-floor.jpeg" class="card-img-top card-pic" alt="Stack of sneaker boxes showcasing variety">
+        <div class="card-body text-center">
+            <h5 class="card-title">Here To Help!</h5>
+            <p class="card-text">We hope you find the help you need, if not - get in touch!</p>
+            <a href="" class="btn btn-outline-light btn-lg text-uppercase">Contact Us!</a>
+        </div>
     </div>
-  </div>
-    {% endblock %}
+</div>
+
+{% endblock %}
