@@ -4,26 +4,32 @@
 <html lang="en">
 
 <head>
+    {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shop the latest sneakers and fashion with KicksOnFire.">
     <meta name="keywords" content="sneakers, shoes, fashion, KicksOnFire, online shopping">
-    
-    <title>KicksOnFire {% block extra_title %}{% endblock %}</title>
+    {% endblock %}
 
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block corecss %}
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
           crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-          integrity="sha384-DyZvPlYgj7DJq5ZmE0OvSl88E5pmA+YIDp4FZstK5YybQ5iDxGe9O0qxwE5I8A4X" 
-          crossorigin="anonymous">
+    {% endblock %}
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}"> <!-- Replace with your actual path -->
 
+    {% block extra_css %}
+    {% endblock %}
+
+    {% block corejs %}
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4243c22c56.js" crossorigin="anonymous"></script>
     <!-- jQuery -->
@@ -34,9 +40,12 @@
     
     <!-- Stripe JS -->
     <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
 
     {% block extra_js %}
     {% endblock %}
+
+    <title>KicksOnFire {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
