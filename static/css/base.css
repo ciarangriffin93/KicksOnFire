@@ -31,13 +31,22 @@ body {
     height: 100%;
 }
 
-.contact-us-button,
-.register-now-button,
 .shop-now-button {
-    background: black;
-    color: white;
+    background:white;
+    color:#9e2022;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border:none;
+    position:relative;
     min-width: 260px;
+    height:60px;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
 
 .btn-black {
     background: black;
@@ -433,4 +442,5 @@ input[name='q']::placeholder {
     }
 
 }
+
 
