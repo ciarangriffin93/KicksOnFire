@@ -29,10 +29,10 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-ymb4usobx18.ws.codeinstitute-ide.net' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-z4hkr7th76k.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-kicksonfire-p8oj9c6uv3l.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriff-kicksonfire-z4hkr7th76k.ws.codeinstitute-ide.net'
 ]
 
 
