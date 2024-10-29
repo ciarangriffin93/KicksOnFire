@@ -286,7 +286,6 @@ input[name='q']::placeholder {
 }
 
 .dropdown-menu {
-    left: auto; /* Adjust dropdown to align better if needed */
     right: 0; /* Align dropdown to the right */
 }
 
