@@ -25,7 +25,7 @@ body {
 
 .logo {
     font-weight: 900 !important;
-    text-shadow: 10px 10px 5px #9e2022;
+    text-shadow: 2px 2px 5px #9e2022;
     -webkit-text-stroke: #000;
     font-size: 50px;
 }
