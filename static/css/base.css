@@ -6,7 +6,7 @@ body {
     background: url('/media/Shoes-home-2.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #000000;
     font-family: 'Lato';
 }
 
@@ -99,7 +99,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: rgb(255, 247, 192);
 	z-index: -1;
 }
 
