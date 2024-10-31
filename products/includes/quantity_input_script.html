@@ -1,0 +1,78 @@
+<script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', () => {
+    // Check if on cart page because it should
+    // not submit on the product page
+    const isCartPage = window.location.pathname.includes('/cart');
+
+    // setting the timeout id to handle
+    // clicks in quick succession
+    let timeoutId;
+
+    // Function to disable/enable buttons based on the quantity
+    const handleEnableDisable = (input) => {
+      const currentValue = parseInt(input.value);
+      const itemId = input.dataset.itemid;
+      const decrementBtn = document.querySelector(`.decrement-qty_${itemId}`);
+      const incrementBtn = document.querySelector(`.increment-qty_${itemId}`);
+
+      decrementBtn.disabled = currentValue <= 1;
+      incrementBtn.disabled = currentValue >= 99;
+    };
+
+    // Function to submit the form with a delay, using debounce to handle rapid clicks
+    const delayedFormSubmit = (input) => {
+      if (timeoutId) clearTimeout(timeoutId);
+
+      timeoutId = setTimeout(() => {
+        input.form.submit();
+      }, 500);
+    };
+
+
+    // Initialize all quantity inputs and their corresponding +/- buttons
+    document.querySelectorAll(".qty_input").forEach(input => {
+      handleEnableDisable(input);
+
+      // Check enable/disable 
+      input.addEventListener('change', () => {
+        handleEnableDisable(input);
+        if (isCartPage) {
+          delayedFormSubmit(input);
+        }
+      });
+    });
+
+    // Increment quantity 
+    document.querySelectorAll(".increment-qty").forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const closestInput = button.closest(".input-group").querySelector(".qty_input");
+        let currentValue = parseInt(closestInput.value);
+        if (currentValue < 99) {
+          closestInput.value = currentValue + 1;
+          handleEnableDisable(closestInput);
+          if (isCartPage) {
+            delayedFormSubmit(closestInput);
+          }
+        }
+      });
+    });
+
+    // Decrement quantity and submit form with delay
+    document.querySelectorAll(".decrement-qty").forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const closestInput = button.closest(".input-group").querySelector(".qty_input");
+        let currentValue = parseInt(closestInput.value);
+        if (currentValue > 1) {
+          closestInput.value = currentValue - 1;
+          handleEnableDisable(closestInput);
+          if (isCartPage) {
+            delayedFormSubmit(closestInput);
+          }
+        }
+      });
+    });
+
+  });
+</script>
