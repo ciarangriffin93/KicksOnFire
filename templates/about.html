@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us | KicksOnFire{% endblock %}
+<meta name="description" content="Learn about KicksOnFire, an Ireland-based online fashion retailer dedicated to sustainability and affordable fashion.">
+
+{% block page_header %}
+    <div class="container about-header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="overlay"></div>
+<div class="container-fluid about-container">
+    <div class="row">
+        <div class="col text-center mt-5 mb-5">
+            <br>
+            <br>
+            <img src="{% static 'images/about-shoes.webp' %}" alt="Trainer Logo" class="img-fluid">
+            <br>
+            <br>
+            <p><strong>KicksOnFire</strong>, founded in 2024, is an online fashion retailer based in Ireland.</p> <br>
+            <p>We specialize in purchasing clearance stock from manufacturers and selling it at discounted prices exclusively over the Internet.<br> We are committed to sourcing stock from ethical and sustainable suppliers, with the goal of becoming Ireland’s leading carbon-neutral fashion company.</p>
+            <h2><a href="/products/" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 category-badge" role="button">Shop Now</a></h2><br>
+        </div>
+    </div>
+</div>     
+
+{% endblock %}
