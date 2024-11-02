@@ -414,7 +414,7 @@ input[name='q']::placeholder {
 
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 400px;
     }
 
     body {
@@ -476,6 +476,10 @@ input[name='q']::placeholder {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .header-container {
+        padding-top: 100px;
+    }
+    
     #mainintrotext {
         font-size: 2.5rem;
     }
