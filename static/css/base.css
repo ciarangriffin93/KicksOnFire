@@ -59,7 +59,6 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-
 .btn-black {
     background: black;
     color: white;
@@ -436,7 +435,7 @@ input[name='q']::placeholder {
     }
 
     .navbar-toggler {
-        padding: .20rem .10rem;
+        padding: .10rem .10rem;
         font-size: 1rem;
     }
 
@@ -457,7 +456,7 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
-    }
+    }   
 
 }
 
