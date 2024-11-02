@@ -1,0 +1,48 @@
+{% extends 'base.html' %} 
+
+<!-- Contact form page -->
+
+{% block content %} 
+
+{% load crispy_forms_tags %}
+
+<div class="container mt-3 min-vh-100">
+  <div class="contact">
+    <div
+      class="container py-5 d-flex justify-content-center align-items-center" >
+      <div>
+        <h1 class="fw-bold">CONTACT</h1>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-2 p-4 pb-0 h3 rfs-11 fw-light">
+    <p class="lh-m">
+        If you would like to know more about events, other questions that come to your mind!
+    </p>
+    <p class="lh-m">I will reply to your email.</p>
+  </div>
+  <div class="container px-5 mx-2 mb-5">
+    <form method="POST" class="rounded" id="contact-us">
+        {% csrf_token %} {{ form | crispy }}
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="w-100">
+    <!-- List of contact icons -->
+    <ul class="contact-icons list-inline d-flex flex-dir-row justify-content-between">
+        <li class="text-center">
+            <i class="fa fa-phone fa-2x"></i>
+            <!-- Phone Number -->
+            <p>+ 353 123456</p>
+        </li>
+
+        <li class="text-center">
+            <i class="fa fa-envelope fa-2x"></i>
+            <!-- Email Address -->
+            <p>cgcorssfit@gmail.com</p>
+        </li>
+    </ul>
+</div>
+</div>
+
+{% endblock %}
