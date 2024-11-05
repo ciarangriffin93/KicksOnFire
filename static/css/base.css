@@ -413,7 +413,7 @@ input[name='q']::placeholder {
 
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 400px;
+        padding-top: 100px;
     }
 
     body {
@@ -489,5 +489,4 @@ input[name='q']::placeholder {
     .mobile-top-header .icon {
         margin-right: 10px;
     }
-    
 }
