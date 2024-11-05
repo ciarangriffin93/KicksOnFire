@@ -81,7 +81,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #000000 !important;
 }
 
 .border-black {
@@ -115,10 +115,49 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
-.btt-link,
+.btt-link {
+    cursor: pointer;
+}
+
+/* Styling the Update and Remove links as buttons with white text */
 .update-link,
 .remove-item {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+/* Update button style */
+.update-link {
+    background-color: #17a2b8; 
+    margin-right: 1rem;
+}
+
+.update-link:hover {
+    background-color: #138496;
+}
+
+/* Remove button style */
+.remove-item {
+    background-color: #dc3545;
+}
+
+.remove-item:hover {
+    background-color: #c82333;
+}
+
+/* Icon styling within the buttons */
+.update-link small,
+.remove-item small {
+    font-size: 0.85rem;
+    vertical-align: middle;
+    color: #fff !important;
 }
 
 input[name='q']::placeholder {
