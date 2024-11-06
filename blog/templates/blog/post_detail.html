@@ -43,6 +43,34 @@
 </div>
 
 <div class="container p-4">
+  <div class="row">
+    <div class="col-12">
+      <strong>
+        {% if user.is_authenticated %}
+        <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+          {% csrf_token %}
+          {% if liked %}
+          <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like"><i
+              class="fa-solid fa-thumbs-up"></i></button>
+          {% else %}
+          <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like"><i
+              class="fa-solid fa-thumbs-up"></i></button>
+          {% endif %}
+        </form>
+        {% else %}
+        <span class="text-secondary cursor-pointer"><i class="fa-solid fa-thumbs-up"></i></span>
+        {% endif %}
+        <!-- Number of likes -->
+        <span class="text-secondary">{{ post.number_of_likes }}</span>
+      </strong>
+    </div>
+    <div class="col-12">
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container p-4">
   <h1>Comments:</h1>
   {% if user.is_authenticated %}
   <a class="btn btn-primary btn-sm mb-4" href="{% url 'new_comment' pk=post.pk %}" role="button">Add comment</a>
