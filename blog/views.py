@@ -1,6 +1,36 @@
-from django.shortcuts import render
-from .models import BlogPost
+from django.shortcuts import render, get_object_or_404, reverse
+from django.views import generic, View
+from django.http import HttpResponseRedirect
+from .models import Post
 
-def blog_post_list(request):
-    posts = BlogPost.objects.all()
-    return render(request, 'blog/blog_post_list.html', {'posts': posts})
+class PostList(generic.ListView):
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by("-created_on")
+    template_name = "news.html"
+    paginate_by = 6
+
+class PostDetail(View):
+
+    def get(self, request, slug, *args, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+
+        return render(
+            request,
+            "post_detail.html",
+            {
+                "post": post,
+            },
+        )
+
+    def post(self, request, slug, *args, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+
+        return render(
+            request,
+            "post_detail.html",
+            {
+                "post": post,
+            },
+        )
