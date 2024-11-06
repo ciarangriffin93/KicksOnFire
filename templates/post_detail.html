@@ -18,16 +18,12 @@
     <div class="row">
       <div class="col-md-6 masthead-text">
         <!-- Post title -->
-        <h1 class="event-title">{{ post.title }}</h1>
+        <h1 class="post-title">{{ post.title }}</h1>
         <!-- Creation date -->
-        <p class="event-subtitle">{{ post.created_on }}</p>
+        <p class="post-subtitle">{{ post.created_on }}</p>
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
-        {% if "placeholder" in post.image.url %}
         <img class="card-img-top" src=" {{ post.image.url }}" alt="{{ post.title }}">
-        {% else %}
-        <img src=" {{ post.image.url }}" width="100%">
-        {% endif %}
       </div>
     </div>
   </div>
