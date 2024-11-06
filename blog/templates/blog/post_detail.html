@@ -42,4 +42,35 @@
   </div>
 </div>
 
+<div class="container p-4">
+  <h1>Comments:</h1>
+  {% if user.is_authenticated %}
+  <a class="btn btn-primary btn-sm mb-4" href="{% url 'new_comment' pk=post.pk %}" role="button">Add comment</a>
+  {% else %}
+  <a class="text-decoration-none" href="{% url 'account_login' %}">
+    Sign in to like and leave a comment
+  </a>
+  {% endif %}
+  {% for comment in post.blog_comments.all %}
+  <div class="card-comment">
+    <p>
+      <strong>{{ comment.author }}</strong> -
+      <!-- Use `author` instead of `user` -->
+      <span class="text-muted">
+        {{ comment.created_on }}
+      </span>
+      <br>
+      {{ comment.body|safe }}
+    </p>
+    {% if request.user == comment.author %}
+    <!-- Ensure the user is comparing against `comment.author` -->
+    <a href="{% url 'edit_comment' comment.id %}" class="btn btn-edit">Edit</a>
+    <a href="{% url 'delete_comment' comment.id %}" class="btn">Delete</a>
+    {% endif %}
+  </div>
+  {% empty %}
+  <p>No comments here yet!</p>
+  {% endfor %}
+</div>
+
 {% endblock content %}

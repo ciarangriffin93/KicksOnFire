@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Leave a comment{% endblock title %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <form method="POST" class="p-2 form">
+        <h1 class="text-center">Leave a Comment</h1>
+        <p>Posting as: {{ user.username }}</p>
+        {% csrf_token %}
+        {{ form|crispy }}
+        <div class="text-center">
+            <button type="submit" class="btn btn-secondary mt-2">Send</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}
