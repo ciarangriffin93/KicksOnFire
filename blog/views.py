@@ -6,7 +6,7 @@ from .models import Post
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "news.html"
+    template_name = "blog/news.html"
     paginate_by = 6
 
 class PostDetail(View):
@@ -17,7 +17,7 @@ class PostDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            "blog/post_detail.html",
             {
                 "post": post,
             },
