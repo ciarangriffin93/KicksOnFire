@@ -10,7 +10,6 @@ body {
     font-family: 'Lato';
 }
 
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -338,6 +337,10 @@ input[name='q']::placeholder {
     color: lightgray;
 }
 
+.card {
+    border: none;
+    background-color: rgb(255, 247, 192);
+}
 
 .link {
     color: #23BBBB;
@@ -348,6 +351,19 @@ input[name='q']::placeholder {
 .link:active {
     color: #445261;
     text-decoration: underline;
+}
+
+.btn-like {
+    color: #000;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #f93200;
+    background: transparent;
+    border: none;
 }
 
 /*--- Blog ---*/
