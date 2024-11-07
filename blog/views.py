@@ -19,8 +19,7 @@ class PostList(generic.ListView):
 def post_detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
     comments = post.blog_comments.all().order_by("-created_on")
-    liked = post.likes.filter(id=request.user.id).exists
-    () if request.user.is_authenticated else False
+    liked = post.likes.filter(id=request.user.id).exists() if request.user.is_authenticated else False
     comment_count = post.blog_comments.filter(approved=True).count()
 
     if request.method == "POST":
@@ -28,11 +27,11 @@ def post_detail(request, slug):
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
             comment.author = request.user
-            comment.event = event
+            comment.post = post
             comment.save()
             messages.success(
-                request, 'Comment submitted and awaiting approval')
-            return redirect('event_detail', slug=slug)
+                request,)
+            return redirect('post_detail', slug=slug) 
 
     comment_form = CommentForm()
     return render(request, 'blog/post_detail.html', {
@@ -61,9 +60,14 @@ class NewComment(CreateView):
     template_name = 'blog/comment.html'
 
     def form_valid(self, form):
+        # Set author and post before saving
         form.instance.author = self.request.user
         form.instance.post = get_object_or_404(Post, pk=self.kwargs['pk'])
-        return super().form_valid(form)
+        
+        # Save the form and add a success message
+        response = super().form_valid(form)
+        messages.success(self.request, "Your comment has been submitted.")
+        return response
 
     def get_success_url(self):
         return reverse('post_detail', kwargs={'slug': self.object.post.slug})
@@ -83,7 +87,8 @@ class EditComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return self.request.user == self.get_object().author
 
     def get_success_url(self):
-        return reverse('post_detail', kwargs={'slug': self.object.event.slug})
+        # Update to use 'post' instead of 'event'
+        return reverse('post_detail', kwargs={'slug': self.object.post.slug})
 
 
 # Delete a comment
