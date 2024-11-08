@@ -56,7 +56,7 @@ select option[value=""] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba( #9e2022,  #d25254, #f1484b, #9e2022);
+    background: #194f4980;
     z-index: 9999;
 }
 
