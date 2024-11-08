@@ -27,14 +27,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-c96ogdodfj5.ws.codeinstitute-ide.net', '.herokuapp.com']
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-kicksonfire-c96ogdodfj5.ws.codeinstitute-ide.net'
-]
-
+ALLOWED_HOSTS = []
+host = os.environ.get("HOST")
+if host:
+    ALLOWED_HOSTS.append(host)
 
 # Application definition
 
