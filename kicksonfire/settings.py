@@ -34,6 +34,10 @@ host = os.environ.get("HOST")
 if host:
     ALLOWED_HOSTS.append(host)
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-ciarangriff-kicksonfire-c96ogdodfj5.ws.codeinstitute-ide.net'
+]
+
 # Application definition
 
 INSTALLED_APPS = [

@@ -1,44 +1,65 @@
 <script type="text/javascript">
-
     // Disable +/- buttons outside 1-99 range
     function handleEnableDisable(itemId) {
-        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
-        var minusDisabled = currentValue < 2;
-        var plusDisabled = currentValue > 98;
+        const currentValue = parseInt($(`#id_qty_${itemId}`).val());
+        const minusDisabled = currentValue <= 1;
+        const plusDisabled = currentValue >= 99;
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
 
     // Ensure proper enabling/disabling of all inputs on page load
-    var allQtyInputs = $('.qty_input');
-    for(var i = 0; i < allQtyInputs.length; i++){
-        var itemId = $(allQtyInputs[i]).data('item_id');
-        handleEnableDisable(itemId);
-    }
+    $(document).ready(function() {
+        $('.qty_input').each(function() {
+            const itemId = $(this).data('item_id');
+            handleEnableDisable(itemId);
 
-    // Check enable/disable every time the input is changed
-    $('.qty_input').change(function() {
-        var itemId = $(this).data('item_id');
+            // Set min and max attributes for additional validation
+            $(this).attr('min', 1);
+            $(this).attr('max', 99);
+        });
+    });
+
+    // Validate input and enforce 1-99 range on input change
+    $('.qty_input').on('input', function() {
+        const itemId = $(this).data('item_id');
+        let currentValue = parseInt($(this).val());
+
+        // Check if the entered value is within 1-99 range
+        if (isNaN(currentValue) || currentValue < 1) {
+            $(this).val(1);  // Reset to 1 if value is below range or invalid
+        } else if (currentValue > 99) {
+            $(this).val(99);  // Reset to 99 if value is above range
+        }
+        
         handleEnableDisable(itemId);
     });
 
     // Increment quantity
     $('.increment-qty').click(function(e) {
-       e.preventDefault();
-       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-       var currentValue = parseInt($(closestInput).val());
-       $(closestInput).val(currentValue + 1);
-       var itemId = $(this).data('item_id');
-       handleEnableDisable(itemId);
+        e.preventDefault();
+        const closestInput = $(this).closest('.input-group').find('.qty_input');
+        let currentValue = parseInt(closestInput.val());
+
+        // Increment only if within range
+        if (currentValue < 99) {
+            closestInput.val(currentValue + 1);
+            const itemId = $(this).data('item_id');
+            handleEnableDisable(itemId);
+        }
     });
 
     // Decrement quantity
     $('.decrement-qty').click(function(e) {
-       e.preventDefault();
-       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-       var currentValue = parseInt($(closestInput).val());
-       $(closestInput).val(currentValue - 1);
-       var itemId = $(this).data('item_id');
-       handleEnableDisable(itemId);
+        e.preventDefault();
+        const closestInput = $(this).closest('.input-group').find('.qty_input');
+        let currentValue = parseInt(closestInput.val());
+
+        // Decrement only if within range
+        if (currentValue > 1) {
+            closestInput.val(currentValue - 1);
+            const itemId = $(this).data('item_id');
+            handleEnableDisable(itemId);
+        }
     });
 </script>
