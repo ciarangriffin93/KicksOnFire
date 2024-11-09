@@ -636,7 +636,7 @@ input[name='q']::placeholder {
 }
 
 .footer-section-social-media {
-    background-color: #9e2022;
+    background: linear-gradient(to right, #9e2022,  #d25254, #f1484b, #9e2022);
 }
 
 /* Media Queries */ 
