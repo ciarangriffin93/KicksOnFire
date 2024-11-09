@@ -123,6 +123,15 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.btn-outline-black {
+    background: white;
+    color: rgb(255, 255, 255) !important;
+}
+
+.btn-outline-black:hover {
+    background: #000;
+}
+
 /* Styling the Update and Remove links as buttons with white text */
 .update-link,
 .remove-item {
