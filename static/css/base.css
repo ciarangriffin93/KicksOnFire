@@ -498,6 +498,11 @@ input[name='q']::placeholder {
     text-decoration: underline; 
 }
 
+.wishlist-prod {
+    max-height: 200px;
+    object-fit: cover;
+}
+
 /* Empty Wishlist Message */
 .p-txt {
     font-size: 1.2rem;
@@ -516,6 +521,7 @@ input[name='q']::placeholder {
 .dropdown-menu {
     right: 0;
 }
+
 
 /* Reviews section */
 .reviews-container {
@@ -718,4 +724,5 @@ input[name='q']::placeholder {
     .mobile-top-header .icon {
         margin-right: 10px;
     }
+
 }
