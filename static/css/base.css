@@ -10,6 +10,30 @@ body {
     font-family: 'Lato';
 }
 
+/* Delivery */
+.delivery_ban {
+    animation: gradient 10s ease infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes gradient {
+    0% {
+        background: var(--bluegreen);
+    }
+
+    40% {
+        background: var(--forest);
+    }
+
+    80% {
+        background: var(--purple);
+    }
+
+    100% {
+        background: var(--gold);
+    }
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
