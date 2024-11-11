@@ -25,10 +25,12 @@
                             <div class="blog-text">
                                 <p class="author">Author: {{ post.author }}</p>
                             </div>
-                            {% if "placeholder" in post.image.url %}
-                                <!-- Handle placeholder image scenario, if needed -->
+                            {% if "placeholder" in post.featured_image.url %}
+                            <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                            alt="placeholder image">
                             {% else %}
-                                <img class="blog-img-top" src="{{ post.image.url }}">
+                            <img class="card-img-top" src=" {{ post.featured_image.url }}"
+                            alt="{{ post.title }}">
                             {% endif %}
                         </div>
                         <div class="blog-text">
