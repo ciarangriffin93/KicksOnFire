@@ -22,9 +22,12 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
 class ReviewForm(forms.ModelForm):
+    RATING_CHOICES = [(i, str(i)) for i in range(1, 6)]  # Choices 1-5
+    rating = forms.ChoiceField(choices=RATING_CHOICES, widget=forms.RadioSelect)
+
     class Meta:
         model = Review
-        fields = ['rating', 'review_text']  # Include the fields you want in the form
+        fields = ['rating', 'review_text']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
