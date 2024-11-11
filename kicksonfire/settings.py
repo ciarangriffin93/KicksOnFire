@@ -35,7 +35,7 @@ if host:
     ALLOWED_HOSTS.append(host)
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-kicksonfire-mvhnwegz9rh.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriff-kicksonfire-7ss8j88uji8.ws.codeinstitute-ide.net'
 ]
 
 # Application definition

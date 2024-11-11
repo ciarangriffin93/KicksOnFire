@@ -298,15 +298,6 @@ input[name='q']::placeholder {
 
 /*-- post_detail --*/
 
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
 .masthead-text {
     background: linear-gradient(to right, #9e2022,  #d25254, #f1484b, #9e2022);
     color: white;
@@ -322,13 +313,10 @@ input[name='q']::placeholder {
     content: "";
     position: absolute;
     top: 0;
-    right: 90%;
+    right: 95%;
     height: 100%;
     width: 150%;
     background-color: #9e2022;
-    -webkit-transform: skew(5deg);
-    -moz-transform: skew(5deg);
-    transform: skew(5deg);
 }
 
 .post-link {
@@ -340,20 +328,16 @@ input[name='q']::placeholder {
     color: #9e2022;
 }
 
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
 .post-subtitle {
     margin-left: 5%;
     color: lightgray;
 }
 
-.card {
-    border: none;
-    background-color: rgb(255, 247, 192);
+.post-title {
+    margin-top: 15%;
+    margin-left: 5%;
 }
+
 
 .link {
     color: #23BBBB;
@@ -396,7 +380,7 @@ input[name='q']::placeholder {
 }
 
 .single-blog-item {
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(255, 255, 255);
     position: relative;
     margin-bottom: 30px;
     padding-bottom: 91px;
