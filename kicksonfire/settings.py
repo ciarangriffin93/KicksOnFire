@@ -30,13 +30,13 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-7ss8j88uji8.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-zptr4mfvzi9.ws.codeinstitute-ide.net']
 host = os.environ.get("HOST")
 if host:
     ALLOWED_HOSTS.append(host)
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriff-kicksonfire-7ss8j88uji8.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriff-kicksonfire-zptr4mfvzi9.ws.codeinstitute-ide.net'
 ]
 
 # Application definition

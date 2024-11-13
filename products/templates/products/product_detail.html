@@ -53,14 +53,20 @@
                 <!-- Wishlist Button -->
                 <form action="{% url 'add_to_wishlist' product.id %}" method="POST" class="mb-3">
                     {% csrf_token %}
-                    {% if in_wishlist %}
-                    <button type="submit" class="btn btn-danger">
-                        <i class="fas fa-heart"></i> Remove from Wishlist
-                    </button>
+                    {% if user.is_authenticated %}
+                        {% if in_wishlist %}
+                            <button type="submit" class="btn btn-danger" aria-label="Remove from Wishlist">
+                                <i class="fas fa-heart"></i> Remove from Wishlist
+                            </button>
+                        {% else %}
+                            <button type="submit" class="btn btn-outline-danger" aria-label="Add to Wishlist">
+                                <i class="far fa-heart"></i> Add to Wishlist
+                            </button>
+                        {% endif %}
                     {% else %}
-                    <button type="submit" class="btn btn-outline-danger">
-                        <i class="far fa-heart"></i> Add to Wishlist
-                    </button>
+                        <a href="{% url 'account_login' %}" class="btn btn-outline-danger">
+                            <i class="far fa-heart"></i> Log in to Add to Wishlist
+                        </a>
                     {% endif %}
                 </form>
 
