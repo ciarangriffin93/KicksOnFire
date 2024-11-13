@@ -678,6 +678,18 @@ input[name='q']::placeholder {
     background: linear-gradient(to right, #9e2022,  #d25254, #f1484b, #9e2022);
 }
 
+/* Mailchimp */
+#mc_embed_signup{
+    background: var(--color-gray-8);
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+    width: 600px;
+}
+
+.mc-field-group input {
+    width: 90%;
+}
+
 /* Media Queries */ 
 @media (min-width: 1200px) {
     .container {
