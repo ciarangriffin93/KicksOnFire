@@ -18,7 +18,7 @@
             </h1>
             <div class="my-4">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-outline-light btn-lg text-uppercase py-3">
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-outline-light btn-lg text-uppercase py-3" title="Browse our exclusive sneaker collection">
                         Shop Now!
                     </a>
                 </h4>
@@ -28,34 +28,51 @@
 </div>
 
 <div class="container mt-4">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <!-- About Us Card -->
         <div class="col card-spacing">
             <div class="card home-card-bckg">
-                <img src="{% static 'images/about-shoes.webp' %}" alt="Shoes representing our brand" class="img-fluid w-100 card-img-fixed">
+                <img src="{% static 'images/about-shoes.png' %}" 
+                     alt="A variety of shoes representing the KicksOnFire brand, showcasing exclusive sneaker styles" 
+                     class="img-fluid w-100" loading="lazy">
                 <div class="card-body text-center">
                     <h5 class="card-title">About Us</h5>
                     <p class="card-text">Welcome to KicksOnFire – your online hub for exclusive, high-end sneakers, designed for those who demand the best!</p>
-                    <a href="/about" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 category-badge" role="button">About Us!</a>
+                    <a href="/about" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 category-badge" role="button" title="Learn more about KicksOnFire">
+                        About Us!
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Register Card -->
         <div class="col card-spacing">
             <div class="card home-card-bckg">
-                <img src="{% static 'images/register.jpeg' %}" alt="Join KicksOnFire Club logo" class="img-fluid w-100 card-img-fixed">
+                <img src="{% static 'images/register.png' %}" 
+                     alt="KicksOnFire Club logo encouraging users to join" 
+                     class="img-fluid w-100" loading="lazy">
                 <div class="card-body text-center">
                     <h5 class="card-title">Join KicksOnFire Club!</h5>
                     <p class="card-text">Create your own wishlist and make payments easier!</p>
-                    <a href="{% url 'account_signup' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 category-badge" role="button">Register!</a>
+                    <a href="{% url 'account_signup' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 category-badge" role="button" title="Create an account to get started">
+                        Register!
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Contact Us Card -->
         <div class="col card-spacing">
             <div class="card home-card-bckg">
-                <img src="https://images.pexels.com/photos/28492804/pexels-photo-28492804/free-photo-of-stack-of-branded-sneaker-boxes-on-concrete-floor.jpeg" class="img-fluid w-100 card-img-fixed" alt="Stack of sneaker boxes showcasing variety">
+                <img src="{% static 'images/sneaker-box.png' %}" 
+                     alt="Stack of sneaker boxes showcasing a variety of sneakers" 
+                     class="img-fluid w-100" loading="lazy">
                 <div class="card-body text-center">
                     <h5 class="card-title">Here To Help!</h5>
                     <p class="card-text">We hope you find the help you need. If not, get in touch!</p>
-                    <a href="{% url 'contact' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 category-badge" role="button">Contact Us!</a>
+                    <a href="{% url 'contact' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 category-badge" role="button" title="Contact us for any inquiries or assistance">
+                        Contact Us!
+                    </a>
                 </div>
             </div>
         </div>
