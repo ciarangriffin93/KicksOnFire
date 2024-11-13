@@ -66,9 +66,9 @@ body {
 }
 
 #mainintrotext {
-    font-weight: 800 !important;
-    text-shadow: 6px 6px 2px #9e2022;
-    -webkit-text-stroke: 2px #fefcfc;
+    font-weight: 400 !important;
+    text-shadow: 2px 2px 1px #9e2022;
+    -webkit-text-stroke: 1px #fefcfc;
 }
 
 .shop-now-button {
@@ -267,7 +267,6 @@ input[name='q']::placeholder {
 }
 
 /* Allauth form formatting */
-
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
@@ -321,7 +320,6 @@ input[name='q']::placeholder {
 }
 
 /*-- post_detail --*/
-
 .masthead-text {
     background: linear-gradient(to right, #9e2022,  #d25254, #f1484b, #9e2022);
     color: white;
@@ -388,7 +386,6 @@ input[name='q']::placeholder {
 }
 
 /*--- Blog ---*/
-
 .blog-section {
     width: 90%;
     flex-wrap: wrap;
@@ -644,7 +641,32 @@ input[name='q']::placeholder {
 }
 
 .card-spacing {
-    margin-bottom: 2rem; /* Adjust the value as needed */
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.home-card-bckg {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.home-card-bckg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Text inside the card */
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-body .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
 }
 
 /* Footer */
