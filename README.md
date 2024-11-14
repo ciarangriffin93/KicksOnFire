@@ -43,14 +43,49 @@ I used [coolors.co]() to generate my colour palette.
 
 ## Wireframes
 
+* [Balsamiq](https://balsamiq.com/wireframe) was used to create basic wireframes for KicksOnFire.
 
 ### Mobile Wireframes
+<details>
+
+![Mobile Home page](/docs/readme_images/home-page-mobile.png)
+![Mobile Home page](/docs/readme_images/home-page-mobile1.png)
+![Mobile Product page](/docs/readme_images/products-page-mobile.png)
+![Mobile Product Detail page](/docs/readme_images/products-detail-page-mobile.png)
+![Mobile Bag page](/docs/readme_images/bag-page-mobile.png)
+![Mobile Checkout page](/docs/readme_images/checkout-page-mobile.png)
+![Mobile Profile page](/docs/readme_images/profile-page-mobile.png)
+![Mobile Product Management page](/docs/readme_images/product-management-page-mobile.png)
+![Mobile Wishlist page](/docs/readme_images/wishlist-page-mobile.png)
+![Mobile ThankYou page](/docs/readme_images/thankyou-page-mobile.png)
+![Mobile About  page](/docs/readme_images/about-page-mobile.png)
+![Mobile Blog page](/docs/readme_images/blog-page-mobile.png)
+![Mobile Blog Post page](/docs/readme_images/blog-detail-page-mobile.png)
+
+</details>
 
 
 ### Tablet Wireframes
 
 
 ### Desktop Wireframes
+<details>
+
+![Desktop Home page](/docs/readme_images/home-page-desktop.png)
+![Desktop Home page](/docs/readme_images/home-page-desktop1.png)
+![Desktop Product page](/docs/readme_images/products-page-desktop.png)
+![Desktop Product Detail page](/docs/readme_images/products-detail-page-desktop.png)
+![Desktop Bag page](/docs/readme_images/bag-page-desktop.png)
+![Desktop Checkout page](/docs/readme_images/checkout-page-desktop.png)
+![Desktop Profile page](/docs/readme_images/myprofile-page-desktop.png)
+![Desktop Product Management page](/docs/readme_images/product-management-page-desktop.png)
+![Desktop Wishlist page](/docs/readme_images/wishlist-page-desktop.png)
+![Desktop ThankYou page](/docs/readme_images/thankyou-page-desktop.png)
+![Desktop About  page](/docs/readme_images/about-page-desktop.png)
+![Desktop Blog page](/docs/readme_images/blog-home-desktop.png)
+![Desktop Blog Post page](/docs/readme_images/blog-post-page-desktop1.png)
+
+</details>
 
 
 ## Features
