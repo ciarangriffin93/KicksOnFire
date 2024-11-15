@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /checkout/
+Disallow: /profiles/
+Sitemap: https://kicks-on-fire-5b791a86ef14.herokuapp.com/sitemap.xml
