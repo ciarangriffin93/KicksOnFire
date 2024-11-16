@@ -252,17 +252,22 @@ Further links for future implementation:
 
 ### Social Media Marketing
 
-Creating a strong social base (with participation) and linking that to the business site can help drive sales.
-Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+Creating a strong social media presence and linking it to the business website can effectively drive sales. Leveraging popular platforms with a large user base, such as Facebook, can significantly increase site traffic. E-commerce thrives on Facebook through consistent posts, engaging user interactions, polls to gather feedback, and competitions designed to attract both new and returning customers.
+
 
 I've created a mockup Facebook business account using the
 [Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
 provided by Code Institute.
 
-![screenshot]()
+![screenshot](/docs/readme_images/kicksonfire's%20-facebook.png)
+* KicksOnFire Facebook Business Page.
 
 ### Newsletter Marketing
 
+In the footer section of the main page a newsletter sign up section is included. Therefore the MailChimp Newsletter subscription service is used. The sign up is easy and completely optional.
+
+![screenshot](/docs/readme_images/newsletter.png)
+* MailChimp Newsletter.
 
 ## Testing
 
