@@ -162,7 +162,8 @@ INSTALLED_APPS = [
 - removed `'django_extensions',` from my `INSTALLED_APPS`
 - finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
 
-![erd]()
+Entity Relationship Diagrams (ERDs) assist in visualizing the structure of a database.
+![erd](/docs/readme_images/lucid.png)
 
 ## Agile Development Process
 
