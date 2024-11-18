@@ -19,6 +19,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | add a product | add_product.html | ![screenshot](/docs/testing_images/products_add-html-ws3.png) | pass |
 | edit a product | edit_product.html | ![screenshot](/docs/testing_images/products_edit-html-ws3.png) | pass |
 | order_history | profile.html | ![screenshot](/docs/testing_images/order_history-html-ws3.png) | pass |
+| bag | bag.html | ![screenshot](/docs/testing_images/bag-html-ws3.png) | pass |
 
 ## CSS Validation
 
@@ -81,3 +82,29 @@ All of the pages for this project were tested using [pagespeed](https://pagespee
 | Products |   ![products](/docs/testing_images/products-mobile-pagespeed.png) | Minor warnings |
 | Blog |   ![blog](/docs/testing_images/blog-mobile-pagespeed.png) | Minor warnings |
 | Wishist |   ![wishlist](/docs/testing_images/wishlist-mobile-pagespeed.png) |
+
+## Manual Testing
+
+
+| TEST | ACTION | EXPECTATION | RESULT | PASS/FAIL
+| -------- | ---------- | --------------- | -----------|--------|
+| Shop now | click on button | User should be forwarded to all products page | Worked as expected | Pass |
+| Products  | click on button | User should be forwarded to products detail page | Worked as expected | Pass |
+| Keep shopping | click on button | User should be able to go back to products page | Worked as expected | Pass |
+| Keep shopping | click on button | User should be able to go back to products form products detail page | Worked as expected | Pass |
+| Add to shopping cart | click on button | User should be able to add an item to the shopping car | Worked as expected | Pass |
+| Shopping cart | click on button | User should be able to view the shopping cart | Worked as expected | Pass |
+| Udpate item | click on button | User should be able to update quantity in shopping cart | Worked as expected | Pass |
+| Remove item | click on button | User should be able to remove an item from the shopping cart | Worked as expected | Pass |
+| wishlist | click on button | User should be able to save products to the wishlist | Worked as expected | Pass |
+| wishlist Remove | click on button | User should be able to remove an item from the wishlist | Worked as expected | Pass |
+| Secure checkout | click on button | User should be able to make a secure checkout from shopping cart | Worked as expected | Pass |
+| Keep shopping | click on button | User should be able to go back to products form the shopping cart | Worked as expected | Pass |
+| History order | click on button | User should be able to view details of old orders in their profile | Worked as expected | Pass |
+| Newsletter subscription | click on button | User should be able to subscribe | Worked as expected | Pass |
+| Social media | click on button | User should be forwarded to facebook, GitHub and linkedin | Worked as expected | Pass |
+| Register | click on button | User should be forwarded to the signup form | Worked as expected | Pass |
+| Signup | click on button | User should be forwarded to the homepage as logged-in user | Worked as expected | Pass |
+
+
+
