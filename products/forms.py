@@ -8,7 +8,7 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = '__all__'
-    
+
     image = forms.ImageField(
         label='Image', required=False, widget=CustomClearableFileInput)
 
@@ -21,9 +21,10 @@ class ProductForm(forms.ModelForm):
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
 
+
 class ReviewForm(forms.ModelForm):
     RATING_CHOICES = [(i, str(i)) for i in range(1, 6)]  # Choices 1-5
-    rating = forms.ChoiceField(choices=RATING_CHOICES, widget=forms.RadioSelect)
+    rating = forms.ChoiceField(choices=RATING_CHOICES, widget=forms.RadioSelect) # noqa
 
     class Meta:
         model = Review
@@ -32,4 +33,4 @@ class ReviewForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['rating'].widget.attrs.update({'class': 'form-control'})
-        self.fields['review_text'].widget.attrs.update({'class': 'form-control', 'rows': 3})
+        self.fields['review_text'].widget.attrs.update({'class': 'form-control', 'rows': 3}) # noqa

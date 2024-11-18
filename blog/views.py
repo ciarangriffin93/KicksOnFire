@@ -19,7 +19,8 @@ class PostList(generic.ListView):
 def post_detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
     comments = post.blog_comments.all().order_by("-created_on")
-    liked = post.likes.filter(id=request.user.id).exists() if request.user.is_authenticated else False
+    liked = post.likes.filter(id=request.user.id).exists
+    () if request.user.is_authenticated else False
     comment_count = post.blog_comments.filter(approved=True).count()
 
     if request.method == "POST":
@@ -31,7 +32,7 @@ def post_detail(request, slug):
             comment.save()
             messages.success(
                 request,)
-            return redirect('post_detail', slug=slug) 
+            return redirect('post_detail', slug=slug)
 
     comment_form = CommentForm()
     return render(request, 'blog/post_detail.html', {
@@ -54,6 +55,8 @@ def post_like(request, slug):
 
 # Views for comment
 # Create a new comment
+
+
 class NewComment(CreateView):
     model = Comment
     form_class = CommentForm
@@ -63,7 +66,7 @@ class NewComment(CreateView):
         # Set author and post before saving
         form.instance.author = self.request.user
         form.instance.post = get_object_or_404(Post, pk=self.kwargs['pk'])
-        
+
         # Save the form and add a success message
         response = super().form_valid(form)
         messages.success(self.request, "Your comment has been submitted.")
@@ -74,6 +77,8 @@ class NewComment(CreateView):
 
 
 # Edit a comment
+
+
 class EditComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Comment
     form_class = CommentForm
