@@ -85,6 +85,7 @@ All of the pages for this project were tested using [pagespeed](https://pagespee
 
 ## Manual Testing
 
+Testing was conducted on a desktop using the Chrome browser.
 
 | TEST | ACTION | EXPECTATION | RESULT | PASS/FAIL
 | -------- | ---------- | --------------- | -----------|--------|
