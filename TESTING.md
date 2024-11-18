@@ -63,3 +63,21 @@ The CSS validations, as they are all the same.
 | profile | models.py | ![screenshot](/docs/testing_images/profile-models.png) | all clear, no errors found |
 | wishlist | models.py | ![screenshot](/docs/testing_images/wishlist-models.png) | all clear, no errors found |
 | wishlist | views.py | ![screenshot](/docs/testing_images/wishlist-views.png) | at two spaces before inline comment and i i use to put # noqa |
+
+## Lighthouse 
+
+All of the pages for this project were tested using [pagespeed](https://pagespeed.web.dev/)
+
+| Page | Lighthouse Scores - Desktop |
+| ---- | ----------------- |
+| Home |   ![home](/docs/testing_images/home-desktop-pagespeed.png) |
+| Products |   ![products](/docs/testing_images/product-desktop-pagespeed.png) |
+| Blog |   ![blog](/docs/testing_images/blog-desktop-pagespeed.png) |
+| Wishist |   ![wishlist](/docs/testing_images/wishlist-desktop-pagespeed.png) |
+
+| Page | Lighthouse Scores - Molilbe |
+| ---- | ----------------- |
+| Home |   ![home](/docs/testing_images/home-mobile-pagespeed.png) |
+| Products |   ![products](/docs/testing_images/products-mobile-pagespeed.png) |
+| Blog |   ![blog](/docs/testing_images/blog-mobile-pagespeed.png) |
+| Wishist |   ![wishlist](/docs/testing_images/wishlist-mobile-pagespeed.png) |
