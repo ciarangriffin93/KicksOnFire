@@ -8,17 +8,17 @@ Return back to the [README.md](README.md) file.
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-| Directory | File | Screenshot | Notes |
+| Directory | File | Screenshot | Note |
 | --- | --- | --- | --- |
-| home | index.html | ![screenshot](/docs/testing_images/home-html-ws3.png) | |
-| products | products.html | ![screenshot](/docs/testing_images/products-html-ws3.png) | |
-| checkout | checkout.html | ![screenshot](/docs/testing_images/checkout-html-ws3.png) | |
-| checkout success | checkout_success.html | ![screenshot](/docs/testing_images/checkout_success-html-ws3.png) | |
-| about | about.html | ![screenshot](/docs/testing_images/about-html-ws3.png) | |
-| news | news.html | ![screenshot](/docs/testing_images/blog-html-ws3.png) | |
-| add a product | add_product.html | ![screenshot](/docs/testing_images/products_add-html-ws3.png) | |
-| edit a product | edit_product.html | ![screenshot](/docs/testing_images/products_edit-html-ws3.png) | |
-| order_history | profile.html | ![screenshot](/docs/testing_images/order_history-html-ws3.png) | |
+| home | index.html | ![screenshot](/docs/testing_images/home-html-ws3.png) | pass |
+| products | products.html | ![screenshot](/docs/testing_images/products-html-ws3.png) | pass |
+| checkout | checkout.html | ![screenshot](/docs/testing_images/checkout-html-ws3.png) | pass |
+| checkout success | checkout_success.html | ![screenshot](/docs/testing_images/checkout_success-html-ws3.png) | pass |
+| about | about.html | ![screenshot](/docs/testing_images/about-html-ws3.png) | pass |
+| news | news.html | ![screenshot](/docs/testing_images/blog-html-ws3.png) | pass |
+| add a product | add_product.html | ![screenshot](/docs/testing_images/products_add-html-ws3.png) | pass |
+| edit a product | edit_product.html | ![screenshot](/docs/testing_images/products_edit-html-ws3.png) | pass |
+| order_history | profile.html | ![screenshot](/docs/testing_images/order_history-html-ws3.png) | pass |
 
 ## CSS Validation
 
@@ -66,18 +66,18 @@ The CSS validations, as they are all the same.
 
 ## Lighthouse 
 
-All of the pages for this project were tested using [pagespeed](https://pagespeed.web.dev/)
+All of the pages for this project were tested using [pagespeed](https://pagespeed.web.dev/) the website operates efficiently on both mobile and desktop devices.
 
-| Page | Lighthouse Scores - Desktop |
-| ---- | ----------------- |
-| Home |   ![home](/docs/testing_images/home-desktop-pagespeed.png) |
-| Products |   ![products](/docs/testing_images/product-desktop-pagespeed.png) |
-| Blog |   ![blog](/docs/testing_images/blog-desktop-pagespeed.png) |
-| Wishist |   ![wishlist](/docs/testing_images/wishlist-desktop-pagespeed.png) |
+| Page | Lighthouse Scores - Desktop | Note |
+| ---- | ----------------- | ---- |
+| Home |   ![home](/docs/testing_images/home-desktop-pagespeed.png) | Minor warnings |
+| Products |   ![products](/docs/testing_images/product-desktop-pagespeed.png) | Minor warnings |
+| Blog |   ![blog](/docs/testing_images/blog-desktop-pagespeed.png) | Minor warnings |
+| Wishist |   ![wishlist](/docs/testing_images/wishlist-desktop-pagespeed.png) | Minor warnings |
 
-| Page | Lighthouse Scores - Molilbe |
-| ---- | ----------------- |
-| Home |   ![home](/docs/testing_images/home-mobile-pagespeed.png) |
-| Products |   ![products](/docs/testing_images/products-mobile-pagespeed.png) |
-| Blog |   ![blog](/docs/testing_images/blog-mobile-pagespeed.png) |
+| Page | Lighthouse Scores - Molilbe | Note |
+| ---- | ----------------- | ---- |
+| Home |   ![home](/docs/testing_images/home-mobile-pagespeed.png) | Minor warnings |
+| Products |   ![products](/docs/testing_images/products-mobile-pagespeed.png) | Minor warnings |
+| Blog |   ![blog](/docs/testing_images/blog-mobile-pagespeed.png) | Minor warnings |
 | Wishist |   ![wishlist](/docs/testing_images/wishlist-mobile-pagespeed.png) |
