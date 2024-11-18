@@ -20,6 +20,19 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | edit a product | edit_product.html | ![screenshot](/docs/testing_images/products_edit-html-ws3.png) | |
 | order_history | profile.html | ![screenshot](/docs/testing_images/order_history-html-ws3.png) | |
 
+## CSS Validation
+
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS files.
+
+The CSS validations, as they are all the same.
+
+![css validation](/docs/testing_images/css-validator.png)
+
+| CSS File | Errors | Warnings |
+| ---- | ------ | -------- |
+| Base CSS | 0 | 0 |
+| Profile CSS | 0 | 0 |
+
 ## Python
 
 [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) was used to validate the Python files that were created.
