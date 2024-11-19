@@ -28,7 +28,6 @@ View live site: [KicksOnFire](https://kicks-on-fire-5b791a86ef14.herokuapp.com/)
 
 ### Colour Scheme
 
-
 I used [coolors.co](https://coolors.co/9e2022-fefcfc-fff7c0-000000-212529) to generate my colour palette.
 
 ![screenshot](/docs/readme_images/coolors.co.png)
@@ -46,15 +45,63 @@ This CSS file is used to define colors as needed:
 
 ## User Stories
 
+* Epic: Account Management
 
-### New Site Users
+| User Story | Priority |
+|------------|------------------|
+| As a **user**, I can **create** an account so that I can **access personalized features and save preferences.** | **MUST HAVE** |
+| As a **user**, I can **log into my account so that** I can **access my personal settings and history order and detail checkout** | **MUST HAVE** |
+| As a user, I can log out of my account so that I can ensure my account is secure when I'm not using it. | **MUST HAVE** |
+| As a user, I can update my account/profile so that I can keep my personal information up to date for checking out. | **MUST HAVE** |
+| As a user, I can delete my account so that I can remove my personal data. | **MUST HAVE** |
+| As a user, I can access and view my user profile so that I can see my personal information, order history, and manage my account settings. | **MUST HAVE** |
 
+* Epic: User Dashboard (Registered Customers)
 
-### Returning Site Users
+| User Story | Priority |
+|------------|------------------|
+| As a user, I want to add products to a wishlist so that I can save them for future. | **MUST HAVE** |
 
+* Epic: Product Management (Staff)
 
-### Site Admin
+| User Story | Priority |
+|------------|------------------|
+| As a staff member, I can create new products so that I can offer more choices to customers. | **MUST HAVE** |
+| As a staff member, I can update product details so that I can ensure all information about the products is current. | **MUST HAVE** |
+| As a staff member, I can delete products so that I can remove items that are no longer available. | **MUST HAVE** |
 
+* Epic: Cart and Checkout
+
+| User Story | Priority |
+|------------|------------------|
+| As a customer, I can add products to my cart so that I can purchase them. | **MUST HAVE** |
+| As a customer, I can remove products from my cart so that I can manage items before finalizing my purchase. | **MUST HAVE** |
+| As a customer, I can see an order summary in the cart so that I can review my order before completing the purchase. | **MUST HAVE** |
+| As a customer, I can complete the checkout pay so that I can finalize my order. | **MUST HAVE** |
+
+* Epic: Review System
+
+| User Story | Priority |
+|------------|------------------|
+| As a registered customer, I can create reviews for products so that I can share my experience with others. | **MUST HAVE** |
+| As a registered customer, I can update my reviews so that I can modify my feedback if my opinion changes. | **MUST HAVE** |
+| As a registered customer, I can delete my reviews so that I can remove my feedback if I no longer wish it to be displayed. | **MUST HAVE** |
+
+* Epic: Blog Management (Staff)
+
+| User Story | Priority |
+|------------|------------------|
+| As a staff member, I can create blog posts so that I can provide valuable content to customers and visitors. | **MUST HAVE** |
+| As a staff member, I can update blog posts so that I can keep the content current and relevant. | **MUST HAVE** |
+| As a staff member, I can delete blog posts so that I can remove outdated or irrelevant content. | **MUST HAVE** |
+
+* Epic: Comment System (Registered Customers)
+
+| User Story | Priority |
+|------------|------------------|
+| As a registered customer, I can create comments on blog posts so that I can engage in discussions and share my thoughts. | **MUST HAVE** |
+| As a registered customer, I can update my comments so that I can change my input or correct mistakes. | **MUST HAVE** |
+| As a registered customer, I can delete my comments so that I can remove my input if I change my mind. | **MUST HAVE** |
 
 ## Wireframes
 
@@ -78,10 +125,6 @@ This CSS file is used to define colors as needed:
 ![Mobile Blog Post page](/docs/readme_images/blog-detail-page-mobile.png)
 
 </details>
-
-
-### Tablet Wireframes
-
 
 ### Desktop Wireframes
 <details>
