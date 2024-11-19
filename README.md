@@ -30,7 +30,11 @@ View live site: [KicksOnFire](https://kicks-on-fire-5b791a86ef14.herokuapp.com/)
 
 I used [coolors.co](https://coolors.co/9e2022-fefcfc-fff7c0-000000-212529) to generate my colour palette.
 
+<details>
+
 ![screenshot](/docs/readme_images/coolors.co.png)
+
+</details>
 
 This CSS file is used to define colors as needed:
 
@@ -147,6 +151,97 @@ This CSS file is used to define colors as needed:
 
 
 ## Features
+
+### Products Page
+
+The products page displays all available items. Users can sort by price, category.
+
+![products-page](/docs/readme_images/products-page.png)
+
+### Products Detail Page
+
+Clicking on the image or name of a product will direct the user or shopper to the Product Details Page for that specific item. This page will feature a larger image of the product along with more detailed information about it.
+
+![products-detail-page](/docs/readme_images/products-detail-page.png)
+
+### Proucts Detail Wishlist Page 
+
+The wishlist is an additional feature added to the store that was not included in the basic plan. This feature is only available to registered and logged-in users. From the Product Detail page, a user can click the "Add to Wishlist" button, adding that product to their wishlist.
+
+![products-detail-wishlist-page](/docs/readme_images/products-detail-wishlist.png)
+
+### Wishlist Page
+
+Users can view a list of the products in their wishlist by clicking the "Add to Wishlist" button. This action will direct them to their wishlist page. 
+
+The wishlist page consists of a loop that renders each item in the wishlist. There is also a "Remove from Wishlist" button that users can click to remove an item from their wishlist. 
+
+Clicking the product name on the card will take the user to the Product Details page for that specific product.
+
+![wishlist-page](/docs/readme_images/wishlist-page.png)
+
+### Products Detail Reviews
+
+Customers who are logged in can leave a review on a product. The review section can be found on the Product Details page, located below the product information.
+
+The review form is straightforward and consists of a text area where users can write their reviews, along with a select box that allows users to rate the product on a scale from 1 to 5.
+
+![Reviews](/docs/readme_images/reviews.png)
+
+### Edit/Delete Reviews
+
+A logged-in user can edit or delete their own comment. Editing a comment will submit the new version.
+
+![edit/delete](/docs/readme_images/edit-delete-review.png)
+
+### Your bag Shopping Page
+
+The shopping bag page shows all products in the cart and their details. Users can update the quantity of products or remove items from the shopping bag.
+
+![your-page](/docs/readme_images/your-bag-page.png)
+
+### Update/Remove Success Your Bag Shopping
+
+Users can update the product quantity or remove products from the shopping bag, which will display a success toast.
+
+![update](/docs/readme_images/bag-update-success.png)
+![remove](/docs/readme_images/bag-remove-success.png)
+
+### Free Delivery Your Bag Shopping
+
+The total cost, including delivery fees, is displayed. A message will notify the user if the minimum amount for free delivery has not been reached, indicating how much more is needed.
+
+![free-delivery](/docs/readme_images/free-delivery.png)
+![no-free-delivery](/docs/readme_images/no-free-delivery.png)
+![no-free-delivery](/docs/readme_images/add-bag-no-free-delivery.png)
+
+### Checkout Page
+
+The checkout page displays a form for users to complete their purchase by providing necessary contact, shipping, and payment information.
+
+![checkout](/docs/readme_images/checkout-page.png)
+
+### Checkout success
+
+After successfully checking out and processing payment through Stripe, the Checkout Success Page will be displayed. This page presents the order details and user information, allowing the customer to confirm that the provided information is accurate.
+
+![checkout-success](/docs/readme_images/checkout-success.png)
+
+### My Profile Page
+
+User clicks on my profile in the top navigation to view their order history details, which they can keep for their records.
+
+![my-profile](/docs/readme_images/click-my-profile.png)
+![my-profile](/docs/readme_images/my-profile-page.png)
+
+### Product Management
+
+Administrators can click on Product Management in the top navigation to access additional functionality, allowing them to add a new product to the store or database from the front end. This feature can be accessed by selecting Profile Management.
+
+This makes it easy for store owners to add new products by filling out the required product information and clicking "Add Product."
+
+![product-management](/docs/readme_images/click-product-management.png)
+![product-management](/docs/readme_images/product-management.png)
 
 
 ### Existing Features
