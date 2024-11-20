@@ -234,7 +234,7 @@ User clicks on my profile in the top navigation to view their order history deta
 ![my-profile](/docs/readme_images/click-my-profile.png)
 ![my-profile](/docs/readme_images/my-profile-page.png)
 
-### Product Management
+### Product Management Admin Only
 
 Administrators can click on Product Management in the top navigation to access additional functionality, allowing them to add a new product to the store or database from the front end. This feature can be accessed by selecting Profile Management.
 
@@ -243,8 +243,39 @@ This makes it easy for store owners to add new products by filling out the requi
 ![product-management](/docs/readme_images/click-product-management.png)
 ![product-management](/docs/readme_images/product-management.png)
 
+Admin Django Backend Panel - Admin Only
 
-### Existing Features
+![django-admin](/docs/readme_images/django-admin.png)
+
+### Footer
+
+KicksOnFire’s footer includes the company’s social media connections. The Facebook page for KicksOnFire opens in a new tab, while my LinkedIn and GitHub profiles are also linked and will open in new tabs. The “Contact Us” button opens a modal for any inquiries. Additionally about, there is a section about the KicksOnFire story. 
+
+Users can sign up for weekly emails through the newsletter subscription form with all the information they need about KicksOnFire.
+
+Underneath, you'll find the store’s Privacy Policy and Terms and Conditions. The Privacy Policy opens in a new tab, while the Terms and Conditions are displayed on a new KicksOnFire webpage, thanks to Termly's pasteable HTML block, after you provide the relevant business details.
+
+![footer](/docs/readme_images/footer.png)
+
+### Contact Us
+
+Customers can contact us with any queries they may have. Once they submit their name, email, and message, they will be directed to a thank you page that includes a ‘Return Home’ button. The Admin can view the messages in their connected business email service and respond directly to the customers.
+
+![contact-form-message](/docs/readme_images/contact-message.png)
+![contact-thank-you](/docs/readme_images/contact-thank-you.png)
+![contact-form-email](/docs/readme_images/contact-form-email.png)
+
+### 404 Page 
+
+"404 Not Found” is displayed when a user tries to access a page that doesn’t exist. This message suggests that the user may have mistyped the URL or clicked on a broken link. The page includes a button to redirect users back to the homepage.
+
+![404](/docs/readme_images/404html-page.png)
+
+### 500 Page
+
+HTTP error code 500 indicates an internal server error, which means there is a problem with the website's server.
+
+![500](/docs/readme_images/500.html-page.png)
 
 
 ### Future Features
