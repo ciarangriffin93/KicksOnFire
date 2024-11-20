@@ -107,5 +107,15 @@ Testing was conducted on a desktop using the Chrome browser.
 | Register | click on button | User should be forwarded to the signup form | Worked as expected | Pass |
 | Signup | click on button | User should be forwarded to the homepage as logged-in user | Worked as expected | Pass |
 
+## Responsiveness
+
+The website is fully responsive and adjusts perfectly to various screen sizes.
+
+| Device | Home | About | Blog | Blog Detail | Product | Product Detail | Contact | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Desktop | ![screenshot](/docs/testing_images/desktop-home-resp.png) | ![screenshot](/docs/testing_images/desktop-about-resp.png) | ![screenshot](/docs/testing_images/desktop-blog-resp.png) | ![screenshot](/docs/testing_images/desktop-blog-detail-resp.png) | ![screenshot](/docs/testing_images/desktop-products-resp.png) | ![screenshot](/docs/testing_images/desktop-products-detail-resp.png) | ![screenshot](/docs/testing_images/desktop-contact-resp.png) | The performance meets the expected standard. |
+| Mobile | ![screenshot](/docs/testing_images/mobile-home-resp.png) | ![screenshot](/docs/testing_images/mobile-about-resp.png) | ![screenshot](/docs/testing_images/mobile-blog-resp.png) | ![screenshot](/docs/testing_images/mobile-blog-detail-resp.png) | ![screenshot](/docs/testing_images/mobile-products-resp.png) | ![screenshot](/docs/testing_images/mobile-product-detail-resp.png) | ![screenshot](/docs/testing_images/mobile-contact-resp.png) | The performance meets the expected standard. |
+| Tablet | ![screenshot](/docs/testing_images/tablet-home-resp.png) | ![screenshot](/docs/testing_images/tablet-about-resp.png) | ![screenshot](/docs/testing_images/tablet-blog-resp.png) | ![screenshot](/docs/testing_images/tablet-blog-detail-resp.png) | ![screenshot](/docs/testing_images/tablet-products-resp.png) | ![screenshot](/docs/testing_images/mobile-product-detail-resp.png) | ![screenshot](/docs/testing_images/tablet-contact-resp.png) | The performance meets the expected standard. |
+
 
 
