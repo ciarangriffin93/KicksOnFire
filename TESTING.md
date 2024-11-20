@@ -118,4 +118,16 @@ The website is fully responsive and adjusts perfectly to various screen sizes.
 | Tablet | ![screenshot](/docs/testing_images/tablet-home-resp.png) | ![screenshot](/docs/testing_images/tablet-about-resp.png) | ![screenshot](/docs/testing_images/tablet-blog-resp.png) | ![screenshot](/docs/testing_images/tablet-blog-detail-resp.png) | ![screenshot](/docs/testing_images/tablet-products-resp.png) | ![screenshot](/docs/testing_images/mobile-product-detail-resp.png) | ![screenshot](/docs/testing_images/tablet-contact-resp.png) | The performance meets the expected standard. |
 
 
+### Browser Compatibility
+
+I tested on various browsers; purchases were made, articles and products were added, edited, or deleted, and all features were functioning properly.
+
+- Chrome 
+- Firefox
+
+| Browser | Issue | Functionality |
+|---------|-------|---------------|
+| Chrome  | None | All Intact |
+| Firefox | None  | All Intact    |
+
 
