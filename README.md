@@ -19,7 +19,7 @@ In addition to our diverse range of sneakers, we provide convenient features lik
 
 This business idea is close to my heart, as it lets me combine my love of fashion sneakers with my passion for using Django, HTML, CSS, JavaScript, and Python.
 
-![kicksonfire responsive screenshot](docs/readme_images/responive.png)
+![kicksonfire responsive screenshot](/docs/readme_images/responive.png)
 
 View live site: [KicksOnFire](https://kicks-on-fire-5b791a86ef14.herokuapp.com/)
 
@@ -471,15 +471,23 @@ I've created a mockup Facebook business account using the
 [Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
 provided by Code Institute.
 
+* `KicksOnFire Facebook Business Page.`
 ![screenshot](/docs/readme_images/kicksonfire's%20-facebook.png)
-* KicksOnFire Facebook Business Page.
+![screenshot](/docs/readme_images/post-fb.png)
 
 ### Newsletter Marketing
 
 In the footer section of the main page a newsletter sign up section is included. Therefore the MailChimp Newsletter subscription service is used. The sign up is easy and completely optional.
 
+* `MailChimp Newsletter.`
 ![screenshot](/docs/readme_images/newsletter.png)
-* MailChimp Newsletter.
+
+* `Sign up message successful`
+![screenshot](/docs/readme_images/message-success-mailchimp.png)
+
+* `The email has been added to the subscribers contact list in Mailchimp.`
+![screenshot](/docs/readme_images/mailchimp.png)
+
 
 ## Testing
 
@@ -633,6 +641,9 @@ Once on the IAM page, follow these steps:
 - Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
 - No further settings are required, so click **Upload**.
 
+* `Select AWS Region`
+![aws](/docs/readme_images/aws-amaszon.png)
+
 ### Stripe API
 
 This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
@@ -653,6 +664,9 @@ As a backup, in case users prematurely close the purchase-order page during paym
 - Click **Add Endpoint** to complete the process.
 - You'll have a new key here:
 	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+* `Stripe Webhook/Payment Successful`
+![stripe](/docs/readme_images/stripe.png)
 
 ### Gmail API
 
