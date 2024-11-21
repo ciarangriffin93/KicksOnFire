@@ -589,7 +589,7 @@ input[name='q']::placeholder {
 
 /* Login / signup prompts */
 .login-prompt {
-    background-color: #fff4e6;
+    background-color: #000000;
     padding: 20px;
     border-radius: 5px;
     border: 1px solid #ff9800;
@@ -605,6 +605,7 @@ input[name='q']::placeholder {
 .login-prompt a:hover {
     text-decoration: underline;
 }
+
 
 /* Container for product details */
 .product-container {

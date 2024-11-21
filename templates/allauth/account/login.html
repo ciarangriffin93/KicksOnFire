@@ -8,7 +8,7 @@
 {% block content %}
 
 <div class="overlay"></div>
-<section class="container py-5">
+<section class="container text-center my-5">
 
   <h1>{% trans "Sign In" %}</h1>
 
@@ -36,7 +36,7 @@
     first.{% endblocktrans %}</p>
   {% endif %}
 
-  <form class="login" method="POST" action="{% url 'account_login' %}">
+  <form class="login p-4 w-75 mx-auto" method="POST" action="{% url 'account_login' %}">
     {% csrf_token %}
     {{ form | crispy }}
     {% if redirect_field_value %}
