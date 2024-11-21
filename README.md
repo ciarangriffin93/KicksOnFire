@@ -152,6 +152,24 @@ This CSS file is used to define colors as needed:
 
 ## Features
 
+### Existing Features
+
+### Hero Section
+
+he Hero Section spans the entire width of the screen and is positioned at the top of the page, above the fold (the part of the webpage that is visible without scrolling). Because of its prominent placement, I aimed to make it visually striking to capture the visitor’s attention and encourage them to explore more of the website’s content or offerings.
+
+![hero-section](/docs/readme_images/hero-section.png)
+
+### Navigation Bar
+
+The navigation bar and the free delivery option for desktop orders are clearly visible over the hero image.
+
+In the center of the navigation bar, there are menu links to the store's departments: Men's, Women's, and Accessories. Clicking any of these links will take users to the corresponding product listing page for shoes in that department.
+
+On the right side of the navigation bar, users will see options to log in or register for an account on the website. This section also includes a cart icon that displays the user's current cart total. Additionally, once the user is logged in, they can access a profile section to manage their account details, along with a wishlist section that allows them to save products they may wish to purchase in the future.
+
+![nav-bar](/docs/readme_images/nav-bar.png)
+
 ### Products Page
 
 The products page displays all available items. Users can sort by price, category.
@@ -265,6 +283,23 @@ Customers can contact us with any queries they may have. Once they submit their 
 ![contact-thank-you](/docs/readme_images/contact-thank-you.png)
 ![contact-form-email](/docs/readme_images/contact-form-email.png)
 
+### Register Form (Sign Up)
+
+Enable shoppers to create an account on the website.
+
+![signup](/docs/readme_images/signup-form.png)
+
+### Sign In Form
+
+![sign-in](/docs/readme_images/sign-in-form.png)
+
+### Sign Out Form 
+
+The sign-out page is designed for security. Would you like to log out of your account securely?
+
+![sign-out](/docs/readme_images/log-out.png)
+
+
 ### 404 Page 
 
 "404 Not Found” is displayed when a user tries to access a page that doesn’t exist. This message suggests that the user may have mistyped the URL or clicked on a broken link. The page includes a button to redirect users back to the homepage.
@@ -279,6 +314,8 @@ HTTP error code 500 indicates an internal server error, which means there is a p
 
 
 ### Future Features
+
+Kicksofire’s e-commerce store is performing well, but the team is committed to enhancing the shopping experience even further. An exciting update will involve revamping the hero images on the homepage to feature a diverse range of products for men, women, and kids. Each hero image will spotlight popular items—such as sleek men's sneakers, trendy women's footwear, and stylish kids' shoes—while also introducing improved sizing options like 6, 7, 8, and 9 for kids' products. These changes aim to create a visually engaging and user-friendly shopping journey for every customer.
 
 
 ## Tools & Technologies Used
@@ -297,7 +334,6 @@ HTTP error code 500 indicates an internal server error, which means there is a p
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [![Flask](https://img.shields.io/badge/Flask-grey?logo=flask&logoColor=000000)](https://flask.palletsprojects.com) used as the Python framework for the site.
 - [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
-- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
 - [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
 - [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) used as the Postgres database.
 - [![Cloudinary](https://img.shields.io/badge/Cloudinary-grey?logo=cloudinary&logoColor=3448C5)](https://cloudinary.com) used for online static file storage.
@@ -308,7 +344,6 @@ HTTP error code 500 indicates an internal server error, which means there is a p
 - [![AWS S3](https://img.shields.io/badge/AWS_S3-grey?logo=amazons3&logoColor=569A31)](https://aws.amazon.com/s3) used for online static file storage.
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
 - [![Canva](https://img.shields.io/badge/Canva-grey?logo=canva&logoColor=00C4CC)](https://www.canva.com/p/canvawireframes) used for creating wireframes.
-- [![Google Maps API](https://img.shields.io/badge/Google_Maps_API-grey?logo=googlemaps&logoColor=4285F4)](https://developers.google.com/maps) used as an interactive map on my site.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
 - [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
 
