@@ -56,7 +56,6 @@ This CSS file is used to define colors as needed:
 | As a **user**, I can **create** an account so that I can **access personalized features and save preferences.** | **MUST HAVE** |
 | As a **user**, I can **log into my account so that** I can **access my personal settings and history order and detail checkout** | **MUST HAVE** |
 | As a user, I can log out of my account so that I can ensure my account is secure when I'm not using it. | **MUST HAVE** |
-| As a user, I can update my account/profile so that I can keep my personal information up to date for checking out. | **MUST HAVE** |
 | As a user, I can delete my account so that I can remove my personal data. | **MUST HAVE** |
 | As a user, I can access and view my user profile so that I can see my personal information, order history, and manage my account settings. | **MUST HAVE** |
 
@@ -80,7 +79,6 @@ This CSS file is used to define colors as needed:
 |------------|------------------|
 | As a customer, I can add products to my cart so that I can purchase them. | **MUST HAVE** |
 | As a customer, I can remove products from my cart so that I can manage items before finalizing my purchase. | **MUST HAVE** |
-| As a customer, I can see an order summary in the cart so that I can review my order before completing the purchase. | **MUST HAVE** |
 | As a customer, I can complete the checkout pay so that I can finalize my order. | **MUST HAVE** |
 
 * Epic: Review System
@@ -479,10 +477,12 @@ provided by Code Institute.
 
 In the footer section of the main page a newsletter sign up section is included. Therefore the MailChimp Newsletter subscription service is used. The sign up is easy and completely optional.
 
-* `MailChimp Newsletter.`
+*`MailChimp Newsletter.`
+
 ![screenshot](/docs/readme_images/newsletter.png)
 
 * `Sign up message successful`
+
 ![screenshot](/docs/readme_images/message-success-mailchimp.png)
 
 * `The email has been added to the subscribers contact list in Mailchimp.`

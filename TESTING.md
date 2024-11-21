@@ -130,4 +130,12 @@ I tested on various browsers; purchases were made, articles and products were ad
 | Chrome  | None | All Intact |
 | Firefox | None  | All Intact    |
 
+### BUG
+
+* I had issues with the PostgreSQL database, so I changed to a new PostgreSQL, and it has been working.
+
+* The +/- buttons on the bag/cart page were broken, so I fixed the issue with the quantity_input.js and was successful.
+
+No known unresolved bugs.
+
 
