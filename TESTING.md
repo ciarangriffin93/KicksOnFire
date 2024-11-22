@@ -130,12 +130,23 @@ I tested on various browsers; purchases were made, articles and products were ad
 | Chrome  | None | All Intact |
 | Firefox | None  | All Intact    |
 
+### Dev Tools/Real World Device Testing
+
+To ensure the Kicksonfire  e-commerce platform was fully responsive, comprehensive testing was carried out across a variety of devices using Google Dev Tools. All features of the platform were tested on these devices to verify the responsiveness and functionality. Below is a summary of the testing results and any issues that were identified, along with the fixes implemented.
+
+**Dev Tools Device Testing - all features tested, issues noted below**
+| Device  | Feature    | Issue  | Fix  |
+| ------- | ---------- | ------ |------|
+| iPhone 12 Pro | All features | None | No issues detected.  |
+| Samsung Galaxy s20 | All features | None | No issues detected. |
+| iPad Pro | All features | None | No issues detected. |
+
 ### BUG
 
-* I had issues with the PostgreSQL database, so I changed to a new PostgreSQL, and it has been working.
+* PostgreSQL Database Issue: Initially, there were problems with the PostgreSQL database, so I made the decision to switch to a new PostgreSQL server. Since then, everything has been running smoothly.
 
-* The +/- buttons on the bag/cart page were broken, so I fixed the issue with the quantity_input.js and was successful.
+* Broken +/- Buttons on Bag/Cart Page: The +/- buttons on the bag/cart page were malfunctioning, so I resolved the issue by updating the quantity_input.js file. The fix was successful, and now customers can adjust quantities without any problems.
 
-No known unresolved bugs.
+No Known Unresolved Bugs: The system is currently stable with no outstanding issues.
 
 

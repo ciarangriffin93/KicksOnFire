@@ -53,57 +53,77 @@ This CSS file is used to define colors as needed:
 
 | User Story | Priority |
 |------------|------------------|
-| As a **user**, I can **create** an account so that I can **access personalized features and save preferences.** | **MUST HAVE** |
-| As a **user**, I can **log into my account so that** I can **access my personal settings and history order and detail checkout** | **MUST HAVE** |
-| As a user, I can log out of my account so that I can ensure my account is secure when I'm not using it. | **MUST HAVE** |
-| As a user, I can delete my account so that I can remove my personal data. | **MUST HAVE** |
-| As a user, I can access and view my user profile so that I can see my personal information, order history, and manage my account settings. | **MUST HAVE** |
+| As a user, I need the ability to create an account to access personalized features and save my preferences. | **MUST HAVE** |
+| As a user, I want to log into my account to view my settings, order history, and complete purchases. | **MUST HAVE** |
+| As a user, I want to log out to keep my account secure when I'm not using it. | **MUST HAVE** |
+| As a user, I want the option to delete my account so I can erase my personal information. | **MUST HAVE** |
+| As a user, I want to view my profile to see my details, manage orders, and adjust settings | **MUST HAVE** |
 
-* Epic: User Dashboard (Registered Customers)
+* Epic: User Registered Customers
 
 | User Story | Priority |
 |------------|------------------|
-| As a user, I want to add products to a wishlist so that I can save them for future. | **MUST HAVE** |
+| As a user, I want to save products to a wishlist to easily access them later. | **MUST HAVE** |
 
 * Epic: Product Management (Staff)
 
 | User Story | Priority |
 |------------|------------------|
-| As a staff member, I can create new products so that I can offer more choices to customers. | **MUST HAVE** |
-| As a staff member, I can update product details so that I can ensure all information about the products is current. | **MUST HAVE** |
-| As a staff member, I can delete products so that I can remove items that are no longer available. | **MUST HAVE** |
+| As a staff member, I need the ability to add new products to expand the selection available to customers. | **MUST HAVE** |
+| As a staff member, I want to update product information to ensure accuracy and relevance. | **MUST HAVE** |
+| As a staff member, I need the ability to remove discontinued products to maintain a clean catalog. | **MUST HAVE** |
 
 * Epic: Cart and Checkout
 
 | User Story | Priority |
 |------------|------------------|
-| As a customer, I can add products to my cart so that I can purchase them. | **MUST HAVE** |
-| As a customer, I can remove products from my cart so that I can manage items before finalizing my purchase. | **MUST HAVE** |
-| As a customer, I can complete the checkout pay so that I can finalize my order. | **MUST HAVE** |
+| As a customer, I need to add products to my shopping cart to prepare for purchasing them. | **MUST HAVE** |
+| As a customer, I want to remove items from my cart to adjust my selection before checkout. | **MUST HAVE** |
+| As a customer, I need the ability to complete the checkout process to finalize my purchase. | **MUST HAVE** |
 
 * Epic: Review System
 
 | User Story | Priority |
 |------------|------------------|
-| As a registered customer, I can create reviews for products so that I can share my experience with others. | **MUST HAVE** |
-| As a registered customer, I can update my reviews so that I can modify my feedback if my opinion changes. | **MUST HAVE** |
-| As a registered customer, I can delete my reviews so that I can remove my feedback if I no longer wish it to be displayed. | **MUST HAVE** |
+| As a registered customer, I want to leave reviews to share my feedback and experiences with others. | **MUST HAVE** |
+| As a registered customer, I need to edit my reviews to update or correct my feedback. | **MUST HAVE** |
+| As a registered customer, I want the option to delete my reviews if I no longer want them to be visible. | **MUST HAVE** |
 
 * Epic: Blog Management (Staff)
 
 | User Story | Priority |
 |------------|------------------|
-| As a staff member, I can create blog posts so that I can provide valuable content to customers and visitors. | **MUST HAVE** |
-| As a staff member, I can update blog posts so that I can keep the content current and relevant. | **MUST HAVE** |
-| As a staff member, I can delete blog posts so that I can remove outdated or irrelevant content. | **MUST HAVE** |
+| As a staff member, I need to write blog posts to provide useful and engaging content for users. | **MUST HAVE** |
 
 * Epic: Comment System (Registered Customers)
 
 | User Story | Priority |
 |------------|------------------|
-| As a registered customer, I can create comments on blog posts so that I can engage in discussions and share my thoughts. | **MUST HAVE** |
-| As a registered customer, I can update my comments so that I can change my input or correct mistakes. | **MUST HAVE** |
-| As a registered customer, I can delete my comments so that I can remove my input if I change my mind. | **MUST HAVE** |
+| As a registered customer, I want to post comments on blogs to share my thoughts and engage in discussions. | **MUST HAVE** |
+| As a registered customer, I need to edit my comments to fix errors or revise my input. | **MUST HAVE** |
+| As a registered customer, I want the ability to remove my comments if I change my mind about sharing them. | **MUST HAVE** |
+
+### Scope Plane
+
+For the Kicksonfire project, I decided to focus on deepening my understanding of the Stripe API and webhook handlers, which were integral to its functionality. To achieve this, I deliberately scoped the project smaller than my earlier work on FreeFido, ensuring the emphasis was on delivering a polished and functional e-commerce platform. My primary objective was to reach the Minimum Viable Product (MVP) with essential features to ensure completion within the time frame.
+
+As the final project for my Diploma, it was important to balance ambition with practicality. The rigorous year had been both rewarding and demanding, leaving me determined to avoid overburdening myself at this critical stage. However, as I planned, I became excited about extending the eco-conscious theme of the project. This led to incorporating the innovative concept of carbon footprint as currency, aligning with emerging trends like carbon credits that could shape future commerce.
+
+To further enrich the platform, I added features that aligned with the project’s goals:
+
+A dedicated Articles section where the Admin could post valuable content about sustainability, climate change, and eco-conscious manufacturing.
+A Wishlist feature, allowing users to save premium, eco-friendly items for future purchases, reflecting their durability and value.
+Using Django’s Model-View-Template (MVT) framework, I was able to efficiently develop these features. The inclusion of an Admin interface made managing products and articles straightforward, resulting in a versatile and fully functional e-commerce system ready for launch.
+
+## Key Features Implemented
+
+* User Accounts: Secure account management with Django AllAuth integration.
+* Payment Processing: Fully functional payment flow using Stripe.
+* Articles Section: Admin-controlled posts with full CRUD capabilities to engage and educate customers.
+* Product Management: Robust tools for adding, updating, and removing products with full CRUD support.
+* Shopping Experience: A seamless user experience with an intuitive Bag and Checkout process.
+* Responsive Design: A site designed to perform effectively across all devices.
+* Business Transparency: Clear, accessible information about the business to build customer trust.
 
 ## Wireframes
 
@@ -315,6 +335,10 @@ HTTP error code 500 indicates an internal server error, which means there is a p
 
 Kicksofire’s e-commerce store is performing well, but the team is committed to enhancing the shopping experience even further. An exciting update will involve revamping the hero images on the homepage to feature a diverse range of products for men, women, and kids. Each hero image will spotlight popular items—such as sleek men's sneakers, trendy women's footwear, and stylish kids' shoes—while also introducing improved sizing options like 6, 7, 8, and 9 for kids' products. These changes aim to create a visually engaging and user-friendly shopping journey for every customer.
 
+These changes are part of our ongoing effort to create a more user-friendly and visually engaging shopping journey. By broadening product representation and offering more precise sizing options, we aim to cater to a wider demographic and provide a tailored experience for all customers, making it easier for them to find products that match their personal style and needs.
+
+In addition to these visual enhancements, the team is also working on improving site navigation and product filtering options to make it even easier for customers to discover the perfect items, quickly and efficiently. The goal is to build a seamless and enjoyable experience from the moment customers land on the homepage to the final stages of checkout.
+
 
 ## Tools & Technologies Used
 
@@ -376,35 +400,27 @@ Entity Relationship Diagrams (ERDs) assist in visualizing the structure of a dat
 
 ## Agile Development Process
 
+Kicksonfree Agile planning methodologies to effectively manage the project. GitHub Projects provided an ideal platform for organizing tasks, enabling the creation of issues, boards, and milestones to streamline workflow.
+
 ### GitHub Projects
 
 [GitHub Projects](https://github.com/ciarangriffin93/KicksOnFire/projects) served as an Agile tool for this project.
 It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
-
 
 ### GitHub Issues
 
 [GitHub Issues](https://github.com/ciarangriffin93/KicksOnFire/issues) served as an another Agile tool.
 There, I used my own **User Story Template** to manage user stories.
 
-
-- [Open Issues](https://github.com/ciarangriffin93/KicksOnFire/issues) [![GitHub issues](https://img.shields.io/github/issues/ciarangriffin93/KicksOnFire)](https://github.com/ciarangriffin93/KicksOnFire/issues)
-
-    ![screenshot](documentation/gh-issues-open.png)
-
 - [Closed Issues](https://github.com/ciarangriffin93/KicksOnFire/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/ciarangriffin93/KicksOnFire)](https://github.com/ciarangriffin93/KicksOnFire/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/gh-issues-closed.png)
 
 ### MoSCoW Prioritization
 
-I've decomposed my Epics into stories prior to prioritizing and implementing them.
-Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+To effectively manage task priorities for the Kicksonfire project, I applied the MoSCoW Prioritization method. This approach categorizes tasks based on their importance and urgency:
 
-- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
-- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
-- **Won't Have**: not a priority for this iteration
+**Must Have:**  Essential features that are guaranteed to be delivered.
+**Should Have:** Features that add significant value but are not critical for immediate delivery.
 
 ## Ecommerce Business Model
 
