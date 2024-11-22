@@ -6,7 +6,7 @@ Return back to the [README.md](README.md) file.
 
 ### HTML
 
-I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML file.
 
 | Directory | File | Screenshot | Note |
 | --- | --- | --- | --- |
@@ -23,7 +23,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 ## CSS Validation
 
-[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS files.
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS file.
 
 The CSS validations, as they are all the same.
 
