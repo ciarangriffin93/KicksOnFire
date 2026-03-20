@@ -27,7 +27,6 @@ class Product(models.Model):
     description = models.TextField()
     sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    stock = models.IntegerField()
     available = models.BooleanField(default=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
                                  blank=True)

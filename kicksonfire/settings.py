@@ -28,9 +28,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ['8000-ciarangriff-kicksonfire-qc73ljvwk17.ws.codeinstitute-ide.net']
+#DEBUG = os.environ.get('DEBUG', False)
+DEBUG = os.environ.get("DEBUG", "False") == "True"
+
+
+#ALLOWED_HOSTS = [
+#    '127.0.0.1',
+#    'localhost',
+#    '8000-ciarangriff-kicksonfire-qc73ljvwk17.ws.codeinstitute-ide.net'
+#]
+
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+
 host = os.environ.get("HOST")
 if host:
     ALLOWED_HOSTS.append(host)
@@ -141,6 +151,8 @@ cloudinary.config(
     api_secret=os.environ.get("CLOUDINARY_API_SECRET"),
     secure=True
 )
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
